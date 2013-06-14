@@ -1,0 +1,83 @@
+
+
+Unhandled Exception: System.Windows.Markup.XamlParseException: 'The invocation of the constructor on type 'Gen4.QuckbooksImport.MainWindow' that matches the specified binding constraints threw an exception.' Line number '3' and line position '9'. ---> System.ApplicationException: Some crazy unhavled exvception.
+   at Gen4.QuckbooksImport.MainWindow..ctor() in c:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\MainWindow.xaml.cs:line 37
+   --- End of inner exception stack trace ---
+   at System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   at System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   at System.Windows.Application.LoadBamlStreamWithSyncInfo(Stream stream, ParserContext pc)
+   at System.Windows.Application.LoadComponent(Uri resourceLocator, Boolean bSkipJournaledProperties)
+   at System.Windows.Application.DoStartup()
+   at System.Windows.Application.<.ctor>b__1(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+
+Unhandled Exception: System.InvalidOperationException: Nullable object must have a value.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Nullable`1.get_Value()
+   at Gen4.QuckbooksImport.MainWindow.<>c__DisplayClassf.<_backgroundWorker_DoWork_DisplayPayPerLeadTransactions>b__e() in c:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\MainWindow.xaml.cs:line 271
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+
+Unhandled Exception: System.InvalidOperationException: Cannot set Owner property to a Window that has not been shown previously.
+   at System.Windows.Window.set_Owner(Window value)
+   at Gen4.QuckbooksImport.MainWindow._backgroundWorker_RunWorkerCompleted_DisplayPayPerLeadTransactions(Object sender, RunWorkerCompletedEventArgs e) in c:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\MainWindow.xaml.cs:line 333
+   at System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e)
+   at System.ComponentModel.BackgroundWorker.AsyncOperationCompleted(Object arg)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+
+Unhandled Exception: System.Reflection.TargetInvocationException: An exception occurred during the operation, making the result invalid.  Check InnerException for exception details. ---> System.Exception: The beta version of RSSBus ADO.NET Provider for QuickBooks V3 used by this application has expired.
+Please visit www.rssbus.com for an updated version.
+This version of the component will no longer function.
+   at System.Data.RSSBus.QuickBooks.QuickBooksConnection..ctor(String connectionString, String rtk)
+   at System.Data.RSSBus.QuickBooks.QuickBooksConnection..ctor(String connectionString)
+   at System.Data.RSSBus.QuickBooks.QuickBooksConnection..ctor()
+   at System.Data.RSSBus.QuickBooks.QuickBooksProviderFactory.CreateConnection()
+   at System.Data.EntityClient.EntityConnection.GetStoreConnection(DbProviderFactory factory)
+   at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at Gen4.QuckbooksImport.IdaQuickbookEntities..ctor() in c:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\IdaQuickbooks.Designer.cs:line 34
+   at Gen4.QuckbooksImport.IdaLeadsManager.GenerateIdaCustomers(ActionResult& actionResult) in c:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\IdaLeadsManager.cs:line 93
+   at Gen4.QuckbooksImport.IdaLeadsManager.GetIdaCustomers(ActionResult& actionResult) in c:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\IdaLeadsManager.cs:line 19
+   at Gen4.QuckbooksImport.MainWindow._backgroundWorker_DoWork_GetCustomers(Object sender, DoWorkEventArgs e) in c:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\MainWindow.xaml.cs:line 100
+   at System.ComponentModel.BackgroundWorker.OnDoWork(DoWorkEventArgs e)
+   at System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument)
+   --- End of inner exception stack trace ---
+   at System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary()
+   at System.ComponentModel.RunWorkerCompletedEventArgs.get_Result()
+   at Gen4.QuckbooksImport.MainWindow._backgroundWorker_RunWorkerCompleted_GetCustomers(Object sender, RunWorkerCompletedEventArgs e) in c:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\MainWindow.xaml.cs:line 116
+   at System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e)
+   at System.ComponentModel.BackgroundWorker.AsyncOperationCompleted(Object arg)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+
+Unhandled Exception: System.Reflection.TargetInvocationException: An exception occurred during the operation, making the result invalid.  Check InnerException for exception details. ---> System.Exception: The beta version of RSSBus ADO.NET Provider for QuickBooks V3 used by this application has expired.
+Please visit www.rssbus.com for an updated version.
+This version of the component will no longer function.
+   at System.Data.RSSBus.QuickBooks.QuickBooksConnection..ctor(String connectionString, String rtk)
+   at System.Data.RSSBus.QuickBooks.QuickBooksConnection..ctor(String connectionString)
+   at System.Data.RSSBus.QuickBooks.QuickBooksConnection..ctor()
+   at System.Data.RSSBus.QuickBooks.QuickBooksProviderFactory.CreateConnection()
+   at System.Data.EntityClient.EntityConnection.GetStoreConnection(DbProviderFactory factory)
+   at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at Gen4.QuckbooksImport.IdaQuickbookEntities..ctor() in c:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\IdaQuickbooks.Designer.cs:line 34
+   at Gen4.QuckbooksImport.IdaLeadsManager.GenerateIdaCustomers(ActionResult& actionResult) in c:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\IdaLeadsManager.cs:line 93
+   at Gen4.QuckbooksImport.IdaLeadsManager.GetIdaCustomers(ActionResult& actionResult) in c:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\IdaLeadsManager.cs:line 19
+   at Gen4.QuckbooksImport.MainWindow._backgroundWorker_DoWork_GetCustomers(Object sender, DoWorkEventArgs e) in c:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\MainWindow.xaml.cs:line 100
+   at System.ComponentModel.BackgroundWorker.OnDoWork(DoWorkEventArgs e)
+   at System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument)
+   --- End of inner exception stack trace ---
+   at System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary()
+   at System.ComponentModel.RunWorkerCompletedEventArgs.get_Result()
+   at Gen4.QuckbooksImport.MainWindow._backgroundWorker_RunWorkerCompleted_GetCustomers(Object sender, RunWorkerCompletedEventArgs e) in c:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\MainWindow.xaml.cs:line 116
+   at System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e)
+   at System.ComponentModel.BackgroundWorker.AsyncOperationCompleted(Object arg)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)

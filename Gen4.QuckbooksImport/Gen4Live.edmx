@@ -1,0 +1,958 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Gen4LiveModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="Gen4LiveModelStoreContainer">
+          <EntitySet Name="ContactPersons" EntityType="Gen4LiveModel.Store.ContactPersons" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CustomerDataFlakes" EntityType="Gen4LiveModel.Store.CustomerDataFlakes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CustomerLocations" EntityType="Gen4LiveModel.Store.CustomerLocations" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Customers" EntityType="Gen4LiveModel.Store.Customers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CustomerStatuses" EntityType="Gen4LiveModel.Store.CustomerStatuses" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Gen4PplLedger" EntityType="Gen4LiveModel.Store.Gen4PplLedger" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LeadTrackingEvents" EntityType="Gen4LiveModel.Store.LeadTrackingEvents" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Principals" EntityType="Gen4LiveModel.Store.Principals" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Websites" EntityType="Gen4LiveModel.Store.Websites" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_ContactPersons_Principals" Association="Gen4LiveModel.Store.FK_ContactPersons_Principals">
+            <End Role="Principals" EntitySet="Principals" />
+            <End Role="ContactPersons" EntitySet="ContactPersons" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CustomerDataFlakes_Customers" Association="Gen4LiveModel.Store.FK_CustomerDataFlakes_Customers">
+            <End Role="Customers" EntitySet="Customers" />
+            <End Role="CustomerDataFlakes" EntitySet="CustomerDataFlakes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CustomerLocations_Customers" Association="Gen4LiveModel.Store.FK_CustomerLocations_Customers">
+            <End Role="Customers" EntitySet="Customers" />
+            <End Role="CustomerLocations" EntitySet="CustomerLocations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Customers_CustomerStatuses" Association="Gen4LiveModel.Store.FK_Customers_CustomerStatuses">
+            <End Role="CustomerStatuses" EntitySet="CustomerStatuses" />
+            <End Role="Customers" EntitySet="Customers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Gen4PplLedger_Customers" Association="Gen4LiveModel.Store.FK_Gen4PplLedger_Customers">
+            <End Role="Customers" EntitySet="Customers" />
+            <End Role="Gen4PplLedger" EntitySet="Gen4PplLedger" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Gen4PplLedger_LeadTrackingEvents" Association="Gen4LiveModel.Store.FK_Gen4PplLedger_LeadTrackingEvents">
+            <End Role="LeadTrackingEvents" EntitySet="LeadTrackingEvents" />
+            <End Role="Gen4PplLedger" EntitySet="Gen4PplLedger" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Websites_CustomerLocations" Association="Gen4LiveModel.Store.FK_Websites_CustomerLocations">
+            <End Role="CustomerLocations" EntitySet="CustomerLocations" />
+            <End Role="Websites" EntitySet="Websites" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Websites_Customers" Association="Gen4LiveModel.Store.FK_Websites_Customers">
+            <End Role="Customers" EntitySet="Customers" />
+            <End Role="Websites" EntitySet="Websites" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ContactPersons">
+          <Key>
+            <PropertyRef Name="ContactPersonID" />
+          </Key>
+          <Property Name="ContactPersonID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MarketID" Type="int" Nullable="false" />
+          <Property Name="EntityScope" Type="int" Nullable="false" />
+          <Property Name="EntityID" Type="int" Nullable="false" />
+          <Property Name="ContactPersonType" Type="int" Nullable="false" />
+          <Property Name="PrincipalID" Type="int" />
+          <Property Name="Salt" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="Token" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="LastModified" Type="datetime" Nullable="false" />
+          <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="Email" Type="nvarchar" MaxLength="128" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="32" />
+          <Property Name="Fax" Type="nvarchar" MaxLength="32" />
+          <Property Name="CellPhone" Type="nvarchar" MaxLength="32" />
+          <Property Name="NamePrefix" Type="nvarchar" MaxLength="32" />
+          <Property Name="Gender" Type="nchar" MaxLength="1" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="64" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="64" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="64" />
+          <Property Name="NameSuffix" Type="nvarchar" MaxLength="32" />
+          <Property Name="Accreditation" Type="nvarchar" MaxLength="32" />
+          <Property Name="Company" Type="nvarchar" MaxLength="128" />
+          <Property Name="Address1" Type="nvarchar" MaxLength="128" />
+          <Property Name="Address2" Type="nvarchar" MaxLength="128" />
+          <Property Name="Suite" Type="nvarchar" MaxLength="32" />
+          <Property Name="City" Type="nvarchar" MaxLength="64" />
+          <Property Name="State" Type="nvarchar" MaxLength="64" />
+          <Property Name="PostalCode" Type="nvarchar" MaxLength="32" />
+          <Property Name="Country2" Type="nvarchar" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="CustomerDataFlakes">
+          <Key>
+            <PropertyRef Name="FlakeID" />
+          </Key>
+          <Property Name="FlakeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MarketID" Type="int" Nullable="false" />
+          <Property Name="CustomerID" Type="int" Nullable="false" />
+          <Property Name="ContentScope" Type="int" Nullable="false" />
+          <Property Name="EntityID" Type="int" Nullable="false" />
+          <Property Name="DataKey" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="DataIndex" Type="int" Nullable="false" />
+          <Property Name="JsonData" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="JsonSchema" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="LastModified" Type="datetime" Nullable="false" />
+          <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="CustomerLocations">
+          <Key>
+            <PropertyRef Name="LocationID" />
+          </Key>
+          <Property Name="LocationID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerID" Type="int" Nullable="false" />
+          <Property Name="MarketID" Type="int" Nullable="false" />
+          <Property Name="LocationStatus" Type="int" Nullable="false" />
+          <Property Name="IsPrimary" Type="bit" Nullable="false" />
+          <Property Name="Demographic" Type="int" Nullable="false" />
+          <Property Name="Longitude" Type="float" />
+          <Property Name="Latitude" Type="float" />
+          <Property Name="GeocodePrecision" Type="int" Nullable="false" />
+          <Property Name="LocationName" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="Address1" Type="nvarchar" MaxLength="128" />
+          <Property Name="Address2" Type="nvarchar" MaxLength="128" />
+          <Property Name="Suite" Type="nvarchar" MaxLength="32" />
+          <Property Name="City" Type="nvarchar" MaxLength="64" />
+          <Property Name="State" Type="nvarchar" MaxLength="64" />
+          <Property Name="PostalCode" Type="nvarchar" MaxLength="32" />
+          <Property Name="County" Type="nvarchar" MaxLength="64" />
+          <Property Name="CountyIsParish" Type="bit" />
+          <Property Name="Country2" Type="nvarchar" MaxLength="2" />
+          <Property Name="GeographicRegion" Type="nvarchar" MaxLength="64" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="32" />
+          <Property Name="Fax" Type="nvarchar" MaxLength="32" />
+          <Property Name="ApptPhone" Type="nvarchar" MaxLength="32" />
+          <Property Name="LeadsEmail" Type="nvarchar" MaxLength="128" />
+          <Property Name="LeadsFax" Type="nvarchar" MaxLength="32" />
+          <Property Name="LeadsSMS" Type="nvarchar" MaxLength="32" />
+          <Property Name="LeadsVoiceIVR" Type="nvarchar" MaxLength="32" />
+          <Property Name="IsGeocodingPending" Type="bit" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="LastModified" Type="datetime" Nullable="false" />
+          <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Customers">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="MarketID" Type="int" Nullable="false" />
+          <Property Name="Salt" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="Token" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="ResellerID" Type="int" />
+          <Property Name="PromotionCode" Type="nvarchar" MaxLength="64" />
+          <Property Name="SourceKey" Type="nvarchar" MaxLength="64" />
+          <Property Name="Company" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="ModelKey" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="TermsAcceptedDate" Type="datetime" />
+          <Property Name="TrialStartDate" Type="datetime" />
+          <Property Name="TrialExpirationDate" Type="datetime" />
+          <Property Name="Tag" Type="nvarchar" MaxLength="128" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="LastModified" Type="datetime" Nullable="false" />
+          <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="CustomerStatuses">
+          <Key>
+            <PropertyRef Name="CustomerStatusID" />
+          </Key>
+          <Property Name="CustomerStatusID" Type="int" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="DisplayPriority" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Gen4PplLedger">
+          <Key>
+            <PropertyRef Name="TransactionID" />
+          </Key>
+          <Property Name="TransactionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ParentTransactionID" Type="int" />
+          <Property Name="CustomerID" Type="int" Nullable="false" />
+          <Property Name="LeadID" Type="int" Nullable="false" />
+          <Property Name="MarketID" Type="int" Nullable="false" />
+          <Property Name="LeadType" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="Source" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="Description" Type="nvarchar" MaxLength="1000" />
+          <Property Name="TransactionType" Type="nvarchar" Nullable="false" MaxLength="16" />
+          <Property Name="IsReported" Type="bit" Nullable="false" />
+          <Property Name="ReportStatus" Type="nvarchar" MaxLength="64" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="LastModified" Type="datetime" Nullable="false" />
+          <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="LeadTrackingEvents">
+          <Key>
+            <PropertyRef Name="LeadTrackingEventID" />
+          </Key>
+          <Property Name="LeadTrackingEventID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MarketID" Type="int" Nullable="false" />
+          <Property Name="EntityScope" Type="int" Nullable="false" />
+          <Property Name="EntityID" Type="int" Nullable="false" />
+          <Property Name="Source" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="NotificationTypeKey" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="Variant" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="NotificationContent" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CountedEvent" Type="bit" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="LastModified" Type="datetime" Nullable="false" />
+          <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Principals">
+          <Key>
+            <PropertyRef Name="PrincipalID" />
+          </Key>
+          <Property Name="PrincipalID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PrincipalType" Type="int" Nullable="false" />
+          <Property Name="MarketID" Type="int" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="LoginName" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="PasswordDigest" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="Salt" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="EncryptedPassword" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="FailedLoginAttempts" Type="int" Nullable="false" />
+          <Property Name="FailedLoginLockoutTime" Type="datetime" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="LastModified" Type="datetime" Nullable="false" />
+          <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Websites">
+          <Key>
+            <PropertyRef Name="WebsiteID" />
+          </Key>
+          <Property Name="WebsiteID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="CustomerID" Type="int" Nullable="false" />
+          <Property Name="LocationID" Type="int" Nullable="false" />
+          <Property Name="MarketID" Type="int" Nullable="false" />
+          <Property Name="Salt" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="Token" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="SkinKey" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="GoogleAnalyticsKey" Type="nvarchar" MaxLength="256" />
+          <Property Name="GoogleWebmasterKey" Type="nvarchar" MaxLength="256" />
+          <Property Name="EnableGoogleAnalytics" Type="bit" Nullable="false" />
+          <Property Name="EnableGoogleWebmasterKey" Type="bit" Nullable="false" />
+          <Property Name="FavIcon" Type="int" />
+          <Property Name="IsPublished" Type="bit" Nullable="false" />
+          <Property Name="IsNoSearchEngines" Type="bit" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="LastModified" Type="datetime" Nullable="false" />
+          <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <Association Name="FK_ContactPersons_Principals">
+          <End Role="Principals" Type="Gen4LiveModel.Store.Principals" Multiplicity="0..1" />
+          <End Role="ContactPersons" Type="Gen4LiveModel.Store.ContactPersons" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Principals">
+              <PropertyRef Name="PrincipalID" />
+            </Principal>
+            <Dependent Role="ContactPersons">
+              <PropertyRef Name="PrincipalID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CustomerDataFlakes_Customers">
+          <End Role="Customers" Type="Gen4LiveModel.Store.Customers" Multiplicity="1" />
+          <End Role="CustomerDataFlakes" Type="Gen4LiveModel.Store.CustomerDataFlakes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customers">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="CustomerDataFlakes">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CustomerLocations_Customers">
+          <End Role="Customers" Type="Gen4LiveModel.Store.Customers" Multiplicity="1" />
+          <End Role="CustomerLocations" Type="Gen4LiveModel.Store.CustomerLocations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customers">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="CustomerLocations">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Customers_CustomerStatuses">
+          <End Role="CustomerStatuses" Type="Gen4LiveModel.Store.CustomerStatuses" Multiplicity="1" />
+          <End Role="Customers" Type="Gen4LiveModel.Store.Customers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CustomerStatuses">
+              <PropertyRef Name="CustomerStatusID" />
+            </Principal>
+            <Dependent Role="Customers">
+              <PropertyRef Name="Status" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Gen4PplLedger_Customers">
+          <End Role="Customers" Type="Gen4LiveModel.Store.Customers" Multiplicity="1" />
+          <End Role="Gen4PplLedger" Type="Gen4LiveModel.Store.Gen4PplLedger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customers">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="Gen4PplLedger">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Gen4PplLedger_LeadTrackingEvents">
+          <End Role="LeadTrackingEvents" Type="Gen4LiveModel.Store.LeadTrackingEvents" Multiplicity="1" />
+          <End Role="Gen4PplLedger" Type="Gen4LiveModel.Store.Gen4PplLedger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LeadTrackingEvents">
+              <PropertyRef Name="LeadTrackingEventID" />
+            </Principal>
+            <Dependent Role="Gen4PplLedger">
+              <PropertyRef Name="LeadID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Websites_CustomerLocations">
+          <End Role="CustomerLocations" Type="Gen4LiveModel.Store.CustomerLocations" Multiplicity="1" />
+          <End Role="Websites" Type="Gen4LiveModel.Store.Websites" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CustomerLocations">
+              <PropertyRef Name="LocationID" />
+            </Principal>
+            <Dependent Role="Websites">
+              <PropertyRef Name="LocationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Websites_Customers">
+          <End Role="Customers" Type="Gen4LiveModel.Store.Customers" Multiplicity="1" />
+          <End Role="Websites" Type="Gen4LiveModel.Store.Websites" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customers">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="Websites">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Gen4LiveModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="Gen4LiveEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ContactPersons" EntityType="Gen4LiveModel.ContactPerson" />
+          <EntitySet Name="IdaCustomers" EntityType="Gen4LiveModel.IdaCustomer" />
+          <EntitySet Name="LeadTrackingEvents" EntityType="Gen4LiveModel.LeadTrackingEvent" />
+          <EntitySet Name="Principals" EntityType="Gen4LiveModel.Principal" />
+          <AssociationSet Name="FK_ContactPersons_Principals" Association="Gen4LiveModel.FK_ContactPersons_Principals">
+            <End Role="Principals" EntitySet="Principals" />
+            <End Role="ContactPersons" EntitySet="ContactPersons" />
+          </AssociationSet>
+          <EntitySet Name="CustomerStatuses" EntityType="Gen4LiveModel.CustomerStatus" />
+          <AssociationSet Name="FK_Customers_CustomerStatuses" Association="Gen4LiveModel.FK_Customers_CustomerStatuses">
+            <End Role="CustomerStatus" EntitySet="CustomerStatuses" />
+            <End Role="IdaCustomer" EntitySet="IdaCustomers" />
+          </AssociationSet>
+          <EntitySet Name="CustomerLocations" EntityType="Gen4LiveModel.CustomerLocation" />
+          <EntitySet Name="Websites" EntityType="Gen4LiveModel.Website" />
+          <AssociationSet Name="FK_CustomerLocations_Customers" Association="Gen4LiveModel.FK_CustomerLocations_Customers">
+            <End Role="IdaCustomer" EntitySet="IdaCustomers" />
+            <End Role="CustomerLocation" EntitySet="CustomerLocations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Websites_CustomerLocations" Association="Gen4LiveModel.FK_Websites_CustomerLocations">
+            <End Role="CustomerLocation" EntitySet="CustomerLocations" />
+            <End Role="Website" EntitySet="Websites" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Websites_Customers" Association="Gen4LiveModel.FK_Websites_Customers">
+            <End Role="IdaCustomer" EntitySet="IdaCustomers" />
+            <End Role="Website" EntitySet="Websites" />
+          </AssociationSet>
+          <EntitySet Name="Gen4PplLedger" EntityType="Gen4LiveModel.Gen4PplLedger" />
+          <AssociationSet Name="FK_Gen4PplLedger_Customers" Association="Gen4LiveModel.FK_Gen4PplLedger_Customers">
+            <End Role="IdaCustomer" EntitySet="IdaCustomers" />
+            <End Role="Gen4PplLedger" EntitySet="Gen4PplLedger" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Gen4PplLedger_LeadTrackingEvents" Association="Gen4LiveModel.FK_Gen4PplLedger_LeadTrackingEvents">
+            <End Role="LeadTrackingEvent" EntitySet="LeadTrackingEvents" />
+            <End Role="Gen4PplLedger" EntitySet="Gen4PplLedger" />
+          </AssociationSet>
+          <EntitySet Name="CustomerDataFlakes" EntityType="Gen4LiveModel.CustomerDataFlake" />
+          <AssociationSet Name="FK_CustomerDataFlakes_Customers" Association="Gen4LiveModel.FK_CustomerDataFlakes_Customers">
+            <End Role="IdaCustomer" EntitySet="IdaCustomers" />
+            <End Role="CustomerDataFlake" EntitySet="CustomerDataFlakes" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="ContactPerson">
+          <Key>
+            <PropertyRef Name="ContactPersonID" />
+          </Key>
+          <Property Name="ContactPersonID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MarketID" Type="Int32" Nullable="false" />
+          <Property Name="EntityScope" Type="Int32" Nullable="false" />
+          <Property Name="EntityID" Type="Int32" Nullable="false" />
+          <Property Name="ContactPersonType" Type="Int32" Nullable="false" />
+          <Property Name="PrincipalID" Type="Int32" />
+          <Property Name="Salt" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="Token" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastModified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Version" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="Email" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="Phone" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="Fax" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="CellPhone" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="NamePrefix" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="Gender" Type="String" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="FirstName" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="LastName" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="NameSuffix" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="Accreditation" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="Company" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="Address1" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="Address2" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="Suite" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="State" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="PostalCode" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="Country2" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Principal" Relationship="Gen4LiveModel.FK_ContactPersons_Principals" FromRole="ContactPersons" ToRole="Principals" />
+        </EntityType>
+        <EntityType Name="IdaCustomer">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="MarketID" Type="Int32" Nullable="false" />
+          <Property Name="Salt" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="Token" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="ResellerID" Type="Int32" />
+          <Property Name="PromotionCode" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="SourceKey" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="ModelKey" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="TermsAcceptedDate" Type="DateTime" Precision="3" />
+          <Property Name="TrialStartDate" Type="DateTime" Precision="3" />
+          <Property Name="TrialExpirationDate" Type="DateTime" Precision="3" />
+          <Property Name="Tag" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastModified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Version" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="CustomerStatus" Relationship="Gen4LiveModel.FK_Customers_CustomerStatuses" FromRole="IdaCustomer" ToRole="CustomerStatus" />
+          <NavigationProperty Name="CustomerLocations" Relationship="Gen4LiveModel.FK_CustomerLocations_Customers" FromRole="IdaCustomer" ToRole="CustomerLocation" />
+          <NavigationProperty Name="Websites" Relationship="Gen4LiveModel.FK_Websites_Customers" FromRole="IdaCustomer" ToRole="Website" />
+          <NavigationProperty Name="Gen4PplLedger" Relationship="Gen4LiveModel.FK_Gen4PplLedger_Customers" FromRole="IdaCustomer" ToRole="Gen4PplLedger" />
+          <NavigationProperty Name="CustomerDataFlakes" Relationship="Gen4LiveModel.FK_CustomerDataFlakes_Customers" FromRole="IdaCustomer" ToRole="CustomerDataFlake" />
+        </EntityType>
+        <EntityType Name="LeadTrackingEvent">
+          <Key>
+            <PropertyRef Name="LeadTrackingEventID" />
+          </Key>
+          <Property Name="LeadTrackingEventID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MarketID" Type="Int32" Nullable="false" />
+          <Property Name="EntityScope" Type="Int32" Nullable="false" />
+          <Property Name="EntityID" Type="Int32" Nullable="false" />
+          <Property Name="Source" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="NotificationTypeKey" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="Variant" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="NotificationContent" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="CountedEvent" Type="Boolean" Nullable="false" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastModified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Version" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Gen4PplLedger" Relationship="Gen4LiveModel.FK_Gen4PplLedger_LeadTrackingEvents" FromRole="LeadTrackingEvent" ToRole="Gen4PplLedger" />
+        </EntityType>
+        <EntityType Name="Principal">
+          <Key>
+            <PropertyRef Name="PrincipalID" />
+          </Key>
+          <Property Name="PrincipalID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PrincipalType" Type="Int32" Nullable="false" />
+          <Property Name="MarketID" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="LoginName" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordDigest" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="Salt" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="EncryptedPassword" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="FailedLoginAttempts" Type="Int32" Nullable="false" />
+          <Property Name="FailedLoginLockoutTime" Type="DateTime" Precision="3" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastModified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Version" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="ContactPersons" Relationship="Gen4LiveModel.FK_ContactPersons_Principals" FromRole="Principals" ToRole="ContactPersons" />
+        </EntityType>
+        <Association Name="FK_ContactPersons_Principals">
+          <End Role="Principals" Type="Gen4LiveModel.Principal" Multiplicity="0..1" />
+          <End Role="ContactPersons" Type="Gen4LiveModel.ContactPerson" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Principals">
+              <PropertyRef Name="PrincipalID" />
+            </Principal>
+            <Dependent Role="ContactPersons">
+              <PropertyRef Name="PrincipalID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="CustomerStatus">
+          <Key>
+            <PropertyRef Name="CustomerStatusID" />
+          </Key>
+          <Property Type="Int32" Name="CustomerStatusID" Nullable="false" />
+          <Property Type="String" Name="DisplayName" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="DisplayPriority" Nullable="false" />
+          <NavigationProperty Name="Customers" Relationship="Gen4LiveModel.FK_Customers_CustomerStatuses" FromRole="CustomerStatus" ToRole="IdaCustomer" />
+        </EntityType>
+        <Association Name="FK_Customers_CustomerStatuses">
+          <End Type="Gen4LiveModel.CustomerStatus" Role="CustomerStatus" Multiplicity="1" />
+          <End Type="Gen4LiveModel.IdaCustomer" Role="IdaCustomer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CustomerStatus">
+              <PropertyRef Name="CustomerStatusID" />
+            </Principal>
+            <Dependent Role="IdaCustomer">
+              <PropertyRef Name="Status" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="CustomerLocation">
+          <Key>
+            <PropertyRef Name="LocationID" />
+          </Key>
+          <Property Type="Int32" Name="LocationID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="CustomerID" Nullable="false" />
+          <Property Type="Int32" Name="MarketID" Nullable="false" />
+          <Property Type="Int32" Name="LocationStatus" Nullable="false" />
+          <Property Type="Boolean" Name="IsPrimary" Nullable="false" />
+          <Property Type="Int32" Name="Demographic" Nullable="false" />
+          <Property Type="Double" Name="Longitude" />
+          <Property Type="Double" Name="Latitude" />
+          <Property Type="Int32" Name="GeocodePrecision" Nullable="false" />
+          <Property Type="String" Name="LocationName" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address1" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address2" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Suite" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="City" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="State" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PostalCode" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="County" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="CountyIsParish" />
+          <Property Type="String" Name="Country2" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GeographicRegion" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Phone" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Fax" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ApptPhone" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LeadsEmail" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LeadsFax" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LeadsSMS" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LeadsVoiceIVR" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsGeocodingPending" Nullable="false" />
+          <Property Type="DateTime" Name="Created" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="LastModified" Nullable="false" Precision="3" />
+          <Property Type="Binary" Name="Version" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Customer" Relationship="Gen4LiveModel.FK_CustomerLocations_Customers" FromRole="CustomerLocation" ToRole="IdaCustomer" />
+          <NavigationProperty Name="Websites" Relationship="Gen4LiveModel.FK_Websites_CustomerLocations" FromRole="CustomerLocation" ToRole="Website" />
+        </EntityType>
+        <EntityType Name="Website">
+          <Key>
+            <PropertyRef Name="WebsiteID" />
+          </Key>
+          <Property Type="Int32" Name="WebsiteID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="Status" Nullable="false" />
+          <Property Type="Int32" Name="CustomerID" Nullable="false" />
+          <Property Type="Int32" Name="LocationID" Nullable="false" />
+          <Property Type="Int32" Name="MarketID" Nullable="false" />
+          <Property Type="String" Name="Salt" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Token" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SkinKey" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="StartDate" Precision="3" />
+          <Property Type="DateTime" Name="EndDate" Precision="3" />
+          <Property Type="String" Name="GoogleAnalyticsKey" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GoogleWebmasterKey" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="EnableGoogleAnalytics" Nullable="false" />
+          <Property Type="Boolean" Name="EnableGoogleWebmasterKey" Nullable="false" />
+          <Property Type="Int32" Name="FavIcon" />
+          <Property Type="Boolean" Name="IsPublished" Nullable="false" />
+          <Property Type="Boolean" Name="IsNoSearchEngines" Nullable="false" />
+          <Property Type="DateTime" Name="Created" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="LastModified" Nullable="false" Precision="3" />
+          <Property Type="Binary" Name="Version" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="CustomerLocation" Relationship="Gen4LiveModel.FK_Websites_CustomerLocations" FromRole="Website" ToRole="CustomerLocation" />
+          <NavigationProperty Name="Customer" Relationship="Gen4LiveModel.FK_Websites_Customers" FromRole="Website" ToRole="IdaCustomer" />
+        </EntityType>
+        <Association Name="FK_CustomerLocations_Customers">
+          <End Type="Gen4LiveModel.IdaCustomer" Role="IdaCustomer" Multiplicity="1" />
+          <End Type="Gen4LiveModel.CustomerLocation" Role="CustomerLocation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IdaCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="CustomerLocation">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Websites_CustomerLocations">
+          <End Type="Gen4LiveModel.CustomerLocation" Role="CustomerLocation" Multiplicity="1" />
+          <End Type="Gen4LiveModel.Website" Role="Website" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CustomerLocation">
+              <PropertyRef Name="LocationID" />
+            </Principal>
+            <Dependent Role="Website">
+              <PropertyRef Name="LocationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Websites_Customers">
+          <End Type="Gen4LiveModel.IdaCustomer" Role="IdaCustomer" Multiplicity="1" />
+          <End Type="Gen4LiveModel.Website" Role="Website" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IdaCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="Website">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Gen4PplLedger">
+          <Key>
+            <PropertyRef Name="TransactionID" />
+          </Key>
+          <Property Type="Int32" Name="TransactionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ParentTransactionID" />
+          <Property Type="Int32" Name="CustomerID" Nullable="false" />
+          <Property Type="Int32" Name="LeadID" Nullable="false" />
+          <Property Type="Int32" Name="MarketID" Nullable="false" />
+          <Property Type="String" Name="LeadType" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Source" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TransactionType" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsReported" Nullable="false" />
+          <Property Type="String" Name="ReportStatus" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Created" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="LastModified" Nullable="false" Precision="3" />
+          <Property Type="Binary" Name="Version" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Customer" Relationship="Gen4LiveModel.FK_Gen4PplLedger_Customers" FromRole="Gen4PplLedger" ToRole="IdaCustomer" />
+          <NavigationProperty Name="LeadTrackingEvent" Relationship="Gen4LiveModel.FK_Gen4PplLedger_LeadTrackingEvents" FromRole="Gen4PplLedger" ToRole="LeadTrackingEvent" />
+        </EntityType>
+        <Association Name="FK_Gen4PplLedger_Customers">
+          <End Type="Gen4LiveModel.IdaCustomer" Role="IdaCustomer" Multiplicity="1" />
+          <End Type="Gen4LiveModel.Gen4PplLedger" Role="Gen4PplLedger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IdaCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="Gen4PplLedger">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Gen4PplLedger_LeadTrackingEvents">
+          <End Type="Gen4LiveModel.LeadTrackingEvent" Role="LeadTrackingEvent" Multiplicity="1" />
+          <End Type="Gen4LiveModel.Gen4PplLedger" Role="Gen4PplLedger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LeadTrackingEvent">
+              <PropertyRef Name="LeadTrackingEventID" />
+            </Principal>
+            <Dependent Role="Gen4PplLedger">
+              <PropertyRef Name="LeadID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="CustomerDataFlake">
+          <Key>
+            <PropertyRef Name="FlakeID" />
+          </Key>
+          <Property Type="Int32" Name="FlakeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="MarketID" Nullable="false" />
+          <Property Type="Int32" Name="CustomerID" Nullable="false" />
+          <Property Type="Int32" Name="ContentScope" Nullable="false" />
+          <Property Type="Int32" Name="EntityID" Nullable="false" />
+          <Property Type="String" Name="DataKey" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="DataIndex" Nullable="false" />
+          <Property Type="String" Name="JsonData" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JsonSchema" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Created" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="LastModified" Nullable="false" Precision="3" />
+          <Property Type="Binary" Name="Version" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Customer" Relationship="Gen4LiveModel.FK_CustomerDataFlakes_Customers" FromRole="CustomerDataFlake" ToRole="IdaCustomer" />
+        </EntityType>
+        <Association Name="FK_CustomerDataFlakes_Customers">
+          <End Type="Gen4LiveModel.IdaCustomer" Role="IdaCustomer" Multiplicity="1" />
+          <End Type="Gen4LiveModel.CustomerDataFlake" Role="CustomerDataFlake" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IdaCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="CustomerDataFlake">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Gen4LiveModelStoreContainer" CdmEntityContainer="Gen4LiveEntities">
+          <EntitySetMapping Name="ContactPersons"><EntityTypeMapping TypeName="Gen4LiveModel.ContactPerson"><MappingFragment StoreEntitySet="ContactPersons">
+            <ScalarProperty Name="ContactPersonID" ColumnName="ContactPersonID" />
+            <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+            <ScalarProperty Name="EntityScope" ColumnName="EntityScope" />
+            <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+            <ScalarProperty Name="ContactPersonType" ColumnName="ContactPersonType" />
+            <ScalarProperty Name="PrincipalID" ColumnName="PrincipalID" />
+            <ScalarProperty Name="Salt" ColumnName="Salt" />
+            <ScalarProperty Name="Token" ColumnName="Token" />
+            <ScalarProperty Name="Created" ColumnName="Created" />
+            <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="Phone" ColumnName="Phone" />
+            <ScalarProperty Name="Fax" ColumnName="Fax" />
+            <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+            <ScalarProperty Name="NamePrefix" ColumnName="NamePrefix" />
+            <ScalarProperty Name="Gender" ColumnName="Gender" />
+            <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+            <ScalarProperty Name="NameSuffix" ColumnName="NameSuffix" />
+            <ScalarProperty Name="Accreditation" ColumnName="Accreditation" />
+            <ScalarProperty Name="Company" ColumnName="Company" />
+            <ScalarProperty Name="Address1" ColumnName="Address1" />
+            <ScalarProperty Name="Address2" ColumnName="Address2" />
+            <ScalarProperty Name="Suite" ColumnName="Suite" />
+            <ScalarProperty Name="City" ColumnName="City" />
+            <ScalarProperty Name="State" ColumnName="State" />
+            <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+            <ScalarProperty Name="Country2" ColumnName="Country2" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="IdaCustomers"><EntityTypeMapping TypeName="Gen4LiveModel.IdaCustomer"><MappingFragment StoreEntitySet="Customers">
+            <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+            <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+            <ScalarProperty Name="Salt" ColumnName="Salt" />
+            <ScalarProperty Name="Token" ColumnName="Token" />
+            <ScalarProperty Name="ResellerID" ColumnName="ResellerID" />
+            <ScalarProperty Name="PromotionCode" ColumnName="PromotionCode" />
+            <ScalarProperty Name="SourceKey" ColumnName="SourceKey" />
+            <ScalarProperty Name="CompanyName" ColumnName="Company" />
+            <ScalarProperty Name="ModelKey" ColumnName="ModelKey" />
+            <ScalarProperty Name="TermsAcceptedDate" ColumnName="TermsAcceptedDate" />
+            <ScalarProperty Name="TrialStartDate" ColumnName="TrialStartDate" />
+            <ScalarProperty Name="TrialExpirationDate" ColumnName="TrialExpirationDate" />
+            <ScalarProperty Name="Tag" ColumnName="Tag" />
+            <ScalarProperty Name="Created" ColumnName="Created" />
+            <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="LeadTrackingEvents"><EntityTypeMapping TypeName="Gen4LiveModel.LeadTrackingEvent"><MappingFragment StoreEntitySet="LeadTrackingEvents">
+            <ScalarProperty Name="LeadTrackingEventID" ColumnName="LeadTrackingEventID" />
+            <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+            <ScalarProperty Name="EntityScope" ColumnName="EntityScope" />
+            <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+            <ScalarProperty Name="Source" ColumnName="Source" />
+            <ScalarProperty Name="NotificationTypeKey" ColumnName="NotificationTypeKey" />
+            <ScalarProperty Name="Variant" ColumnName="Variant" />
+            <ScalarProperty Name="NotificationContent" ColumnName="NotificationContent" />
+            <ScalarProperty Name="CountedEvent" ColumnName="CountedEvent" />
+            <ScalarProperty Name="Created" ColumnName="Created" />
+            <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Principals"><EntityTypeMapping TypeName="Gen4LiveModel.Principal"><MappingFragment StoreEntitySet="Principals">
+            <ScalarProperty Name="PrincipalID" ColumnName="PrincipalID" />
+            <ScalarProperty Name="PrincipalType" ColumnName="PrincipalType" />
+            <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+            <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+            <ScalarProperty Name="PasswordDigest" ColumnName="PasswordDigest" />
+            <ScalarProperty Name="Salt" ColumnName="Salt" />
+            <ScalarProperty Name="EncryptedPassword" ColumnName="EncryptedPassword" />
+            <ScalarProperty Name="FailedLoginAttempts" ColumnName="FailedLoginAttempts" />
+            <ScalarProperty Name="FailedLoginLockoutTime" ColumnName="FailedLoginLockoutTime" />
+            <ScalarProperty Name="Created" ColumnName="Created" />
+            <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="CustomerStatuses">
+            <EntityTypeMapping TypeName="Gen4LiveModel.CustomerStatus">
+              <MappingFragment StoreEntitySet="CustomerStatuses">
+                <ScalarProperty Name="DisplayPriority" ColumnName="DisplayPriority" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="CustomerStatusID" ColumnName="CustomerStatusID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CustomerLocations">
+            <EntityTypeMapping TypeName="Gen4LiveModel.CustomerLocation">
+              <MappingFragment StoreEntitySet="CustomerLocations">
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="IsGeocodingPending" ColumnName="IsGeocodingPending" />
+                <ScalarProperty Name="LeadsVoiceIVR" ColumnName="LeadsVoiceIVR" />
+                <ScalarProperty Name="LeadsSMS" ColumnName="LeadsSMS" />
+                <ScalarProperty Name="LeadsFax" ColumnName="LeadsFax" />
+                <ScalarProperty Name="LeadsEmail" ColumnName="LeadsEmail" />
+                <ScalarProperty Name="ApptPhone" ColumnName="ApptPhone" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="GeographicRegion" ColumnName="GeographicRegion" />
+                <ScalarProperty Name="Country2" ColumnName="Country2" />
+                <ScalarProperty Name="CountyIsParish" ColumnName="CountyIsParish" />
+                <ScalarProperty Name="County" ColumnName="County" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Suite" ColumnName="Suite" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+                <ScalarProperty Name="GeocodePrecision" ColumnName="GeocodePrecision" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Demographic" ColumnName="Demographic" />
+                <ScalarProperty Name="IsPrimary" ColumnName="IsPrimary" />
+                <ScalarProperty Name="LocationStatus" ColumnName="LocationStatus" />
+                <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Websites">
+            <EntityTypeMapping TypeName="Gen4LiveModel.Website">
+              <MappingFragment StoreEntitySet="Websites">
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="IsNoSearchEngines" ColumnName="IsNoSearchEngines" />
+                <ScalarProperty Name="IsPublished" ColumnName="IsPublished" />
+                <ScalarProperty Name="FavIcon" ColumnName="FavIcon" />
+                <ScalarProperty Name="EnableGoogleWebmasterKey" ColumnName="EnableGoogleWebmasterKey" />
+                <ScalarProperty Name="EnableGoogleAnalytics" ColumnName="EnableGoogleAnalytics" />
+                <ScalarProperty Name="GoogleWebmasterKey" ColumnName="GoogleWebmasterKey" />
+                <ScalarProperty Name="GoogleAnalyticsKey" ColumnName="GoogleAnalyticsKey" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="SkinKey" ColumnName="SkinKey" />
+                <ScalarProperty Name="Token" ColumnName="Token" />
+                <ScalarProperty Name="Salt" ColumnName="Salt" />
+                <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+                <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="WebsiteID" ColumnName="WebsiteID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Gen4PplLedger">
+            <EntityTypeMapping TypeName="Gen4LiveModel.Gen4PplLedger">
+              <MappingFragment StoreEntitySet="Gen4PplLedger">
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="ReportStatus" ColumnName="ReportStatus" />
+                <ScalarProperty Name="IsReported" ColumnName="IsReported" />
+                <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="LeadType" ColumnName="LeadType" />
+                <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+                <ScalarProperty Name="LeadID" ColumnName="LeadID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="ParentTransactionID" ColumnName="ParentTransactionID" />
+                <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CustomerDataFlakes">
+            <EntityTypeMapping TypeName="Gen4LiveModel.CustomerDataFlake">
+              <MappingFragment StoreEntitySet="CustomerDataFlakes">
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="JsonSchema" ColumnName="JsonSchema" />
+                <ScalarProperty Name="JsonData" ColumnName="JsonData" />
+                <ScalarProperty Name="DataIndex" ColumnName="DataIndex" />
+                <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+                <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+                <ScalarProperty Name="ContentScope" ColumnName="ContentScope" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+                <ScalarProperty Name="FlakeID" ColumnName="FlakeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Gen4Live">
+        <EntityTypeShape EntityType="Gen4LiveModel.ContactPerson" Width="1.5" PointX="3" PointY="1.125" Height="6.0296842447916656" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gen4LiveModel.IdaCustomer" Width="1.5" PointX="5.75" PointY="0.75" Height="3.7288216145833326" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gen4LiveModel.LeadTrackingEvent" Width="1.875" PointX="5.75" PointY="5.75" Height="2.9070849609374996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gen4LiveModel.Principal" Width="1.5" PointX="0.75" PointY="2.5" Height="3.2357796223958317" IsExpanded="true" />
+        <AssociationConnector Association="Gen4LiveModel.FK_ContactPersons_Principals" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="4.1178898111979159" />
+          <ConnectorPoint PointX="3" PointY="4.1178898111979159" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="Gen4LiveModel.CustomerStatus" Width="2.125" PointX="8.5" PointY="1.125" Height="1.5923063151041674" />
+        <AssociationConnector Association="Gen4LiveModel.FK_Customers_CustomerStatuses" >
+          <ConnectorPoint PointX="8.5" PointY="1.9211531575520837" />
+          <ConnectorPoint PointX="7.25" PointY="1.9211531575520837" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="Gen4LiveModel.CustomerLocation" Width="2.375" PointX="8" PointY="13.875" Height="6.3583789062500014" />
+        <EntityTypeShape EntityType="Gen4LiveModel.Website" Width="1.5" PointX="11.25" PointY="8.25" Height="4.5505582682291674" />
+        <AssociationConnector Association="Gen4LiveModel.FK_CustomerLocations_Customers" >
+          <ConnectorPoint PointX="7.25" PointY="3.1138562013906537" />
+          <ConnectorPoint PointX="8.15625" PointY="3.1138562013906537" />
+          <ConnectorPoint PointX="8.15625" PointY="13.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="Gen4LiveModel.FK_Websites_CustomerLocations" >
+          <ConnectorPoint PointX="9.3281275" PointY="13.875" />
+          <ConnectorPoint PointX="9.3281275" PointY="10.525279134114584" />
+          <ConnectorPoint PointX="11.25" PointY="10.525279134114584" />
+        </AssociationConnector>
+        <AssociationConnector Association="Gen4LiveModel.FK_Websites_Customers" >
+          <ConnectorPoint PointX="7.25" PointY="3.6194306006953276" />
+          <ConnectorPoint PointX="8.0729166666666661" PointY="3.6194306006953272" />
+          <ConnectorPoint PointX="8.2395833333333339" PointY="3.6194306006953276" />
+          <ConnectorPoint PointX="12" PointY="3.6194306006953276" />
+          <ConnectorPoint PointX="12" PointY="8.25" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="Gen4LiveModel.Gen4PplLedger" Width="1.5" PointX="8.75" PointY="3.625" />
+        <AssociationConnector Association="Gen4LiveModel.FK_Gen4PplLedger_Customers" />
+        <AssociationConnector Association="Gen4LiveModel.FK_Gen4PplLedger_LeadTrackingEvents" />
+        <EntityTypeShape EntityType="Gen4LiveModel.CustomerDataFlake" Width="1.875" PointX="3.625" PointY="7.625" />
+        <AssociationConnector Association="Gen4LiveModel.FK_CustomerDataFlakes_Customers" ManuallyRouted="false" >
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

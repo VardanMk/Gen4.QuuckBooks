@@ -1,0 +1,397 @@
+
+
+11/9/2012 12:29:34 PM - Exorted 4 transactions to CSV File.
+
+11/9/2012 1:15:59 PM - Imported TransactionID: 28 for Customer: 10960 - Donald Arima
+
+11/9/2012 1:16:01 PM - Imported TransactionID: 29 for Customer: 10960 - Donald Arima
+
+11/9/2012 1:16:02 PM - Imported TransactionID: 30 for Customer: 10960 - Donald Arima
+
+11/9/2012 1:16:04 PM - Imported TransactionID: 31 for Customer: 10960 - Donald Arima
+
+11/9/2012 1:16:05 PM - Imported TransactionID: 40 for Customer: 11047 - Michael Armstrong
+
+11/9/2012 1:16:06 PM - Imported TransactionID: 41 for Customer: 11047 - Michael Armstrong
+
+11/9/2012 1:16:08 PM - Imported TransactionID: 42 for Customer: 11047 - Michael Armstrong
+
+11/9/2012 1:16:09 PM - Imported TransactionID: 43 for Customer: 11047 - Michael Armstrong
+
+11/9/2012 1:16:10 PM - Imported TransactionID: 44 for Customer: 11086 - Mark Argo
+
+11/9/2012 1:16:11 PM - Imported TransactionID: 45 for Customer: 11086 - Mark Argo
+
+11/9/2012 1:16:13 PM - Imported TransactionID: 46 for Customer: 11086 - Mark Argo
+
+11/9/2012 1:16:14 PM - Imported TransactionID: 47 for Customer: 11086 - Mark Argo
+
+11/9/2012 1:16:15 PM - Imported TransactionID: 56 for Customer: 11166 - John Argeros
+
+11/9/2012 1:16:17 PM - Imported TransactionID: 57 for Customer: 11166 - John Argeros
+
+11/9/2012 1:16:18 PM - Imported TransactionID: 58 for Customer: 11166 - John Argeros
+
+11/9/2012 1:16:20 PM - Imported TransactionID: 59 for Customer: 11166 - John Argeros
+
+11/9/2012 1:16:21 PM - Imported TransactionID: 64 for Customer: 11208 - Cindy Adelstein
+
+11/9/2012 1:16:22 PM - Imported TransactionID: 65 for Customer: 11208 - Cindy Adelstein
+
+11/9/2012 1:16:24 PM - Imported TransactionID: 66 for Customer: 11208 - Cindy Adelstein
+
+11/9/2012 1:16:25 PM - Imported TransactionID: 67 for Customer: 11208 - Cindy Adelstein
+
+11/9/2012 1:16:26 PM - Imported TransactionID: 68 for Customer: 11219 - Andrew Allgood
+
+11/9/2012 1:16:28 PM - Imported TransactionID: 69 for Customer: 11219 - Andrew Allgood
+
+11/9/2012 1:16:29 PM - Imported TransactionID: 70 for Customer: 11219 - Andrew Allgood
+
+11/9/2012 1:16:30 PM - Imported TransactionID: 71 for Customer: 11219 - Andrew Allgood
+
+11/9/2012 1:16:32 PM - Imported TransactionID: 72 for Customer: 11234 - Nic Avalos
+
+11/9/2012 1:16:33 PM - Imported TransactionID: 73 for Customer: 11234 - Nic Avalos
+
+11/9/2012 1:16:34 PM - Imported TransactionID: 74 for Customer: 11234 - Nic Avalos
+
+11/9/2012 1:16:36 PM - Imported TransactionID: 75 for Customer: 11234 - Nic Avalos
+
+11/9/2012 1:16:37 PM - Imported TransactionID: 76 for Customer: 11251 - Johnn Aloia
+
+11/9/2012 1:16:38 PM - Imported TransactionID: 77 for Customer: 11251 - Johnn Aloia
+
+11/9/2012 1:16:40 PM - Imported TransactionID: 78 for Customer: 11251 - Johnn Aloia
+
+11/9/2012 1:16:41 PM - Imported TransactionID: 79 for Customer: 11251 - Johnn Aloia
+
+11/9/2012 1:16:42 PM - Imported TransactionID: 80 for Customer: 11319 - Mark Anema
+
+11/9/2012 1:16:44 PM - Imported TransactionID: 81 for Customer: 11319 - Mark Anema
+
+11/9/2012 1:16:45 PM - Imported TransactionID: 82 for Customer: 11319 - Mark Anema
+
+11/9/2012 1:16:46 PM - Imported TransactionID: 83 for Customer: 11319 - Mark Anema
+
+11/9/2012 1:16:48 PM - Imported TransactionID: 84 for Customer: 11340 - Samir Ayoub
+
+11/9/2012 1:16:49 PM - Imported TransactionID: 85 for Customer: 11340 - Samir Ayoub
+
+11/9/2012 1:16:50 PM - Imported TransactionID: 86 for Customer: 11340 - Samir Ayoub
+
+11/9/2012 1:16:52 PM - Imported TransactionID: 87 for Customer: 11340 - Samir Ayoub
+
+11/9/2012 1:16:53 PM - Imported TransactionID: 88 for Customer: 11390 - Phillip Aubin
+
+11/9/2012 1:16:54 PM - Imported TransactionID: 89 for Customer: 11390 - Phillip Aubin
+
+11/9/2012 1:16:56 PM - Imported TransactionID: 90 for Customer: 11390 - Phillip Aubin
+
+11/9/2012 1:16:57 PM - Imported TransactionID: 91 for Customer: 11390 - Phillip Aubin
+
+11/9/2012 1:16:58 PM - Imported TransactionID: 100 for Customer: 11407 - J. Aboud
+
+11/9/2012 1:17:00 PM - Imported TransactionID: 101 for Customer: 11407 - J. Aboud
+
+11/9/2012 1:17:01 PM - Imported TransactionID: 102 for Customer: 11407 - J. Aboud
+
+11/9/2012 1:17:02 PM - Imported TransactionID: 103 for Customer: 11407 - J. Aboud
+
+11/9/2012 1:17:04 PM - Imported TransactionID: 108 for Customer: 11433 - Dennis Adair
+
+11/9/2012 1:17:05 PM - Imported TransactionID: 109 for Customer: 11433 - Dennis Adair
+
+11/9/2012 1:17:06 PM - Imported TransactionID: 110 for Customer: 11433 - Dennis Adair
+
+11/9/2012 1:17:07 PM - Imported TransactionID: 111 for Customer: 11433 - Dennis Adair
+
+11/9/2012 1:17:09 PM - Imported TransactionID: 128 for Customer: 11573 - George Ayoub
+
+11/9/2012 1:17:10 PM - Imported TransactionID: 129 for Customer: 11573 - George Ayoub
+
+11/9/2012 1:17:12 PM - Imported TransactionID: 130 for Customer: 11573 - George Ayoub
+
+11/9/2012 1:17:13 PM - Imported TransactionID: 131 for Customer: 11573 - George Ayoub
+
+11/9/2012 1:17:14 PM - Imported TransactionID: 167 for Customer: 11830 - Russell Anderson
+
+11/9/2012 1:17:15 PM - Imported TransactionID: 168 for Customer: 11830 - Russell Anderson
+
+11/9/2012 1:17:17 PM - Imported TransactionID: 169 for Customer: 11830 - Russell Anderson
+
+11/9/2012 1:17:18 PM - Imported TransactionID: 170 for Customer: 11830 - Russell Anderson
+
+11/9/2012 1:17:20 PM - Imported TransactionID: 171 for Customer: 11855 - Judith Angeles
+
+11/9/2012 1:17:21 PM - Imported TransactionID: 172 for Customer: 11855 - Judith Angeles
+
+11/9/2012 1:17:22 PM - Imported TransactionID: 173 for Customer: 11855 - Judith Angeles
+
+11/9/2012 1:17:22 PM - Exorted 8 transactions to CSV File.
+
+11/9/2012 2:30:23 PM - Imported TransactionID: 1 for Customer: 10960 - Donald Arima
+
+11/9/2012 2:30:25 PM - Imported TransactionID: 2 for Customer: 10960 - Donald Arima
+
+11/9/2012 2:30:26 PM - Imported TransactionID: 3 for Customer: 10960 - Donald Arima
+
+11/9/2012 2:30:27 PM - Imported TransactionID: 4 for Customer: 10960 - Donald Arima
+
+11/9/2012 2:30:29 PM - Imported TransactionID: 9 for Customer: 11047 - Michael Armstrong
+
+11/9/2012 2:30:30 PM - Imported TransactionID: 10 for Customer: 11047 - Michael Armstrong
+
+11/9/2012 2:30:31 PM - Imported TransactionID: 11 for Customer: 11047 - Michael Armstrong
+
+11/9/2012 2:30:33 PM - Imported TransactionID: 12 for Customer: 11047 - Michael Armstrong
+
+11/9/2012 2:30:34 PM - Imported TransactionID: 13 for Customer: 11086 - Mark Argo
+
+11/9/2012 2:30:36 PM - Imported TransactionID: 14 for Customer: 11086 - Mark Argo
+
+11/9/2012 2:30:37 PM - Imported TransactionID: 15 for Customer: 11086 - Mark Argo
+
+11/9/2012 2:30:38 PM - Imported TransactionID: 16 for Customer: 11086 - Mark Argo
+
+11/9/2012 2:30:40 PM - Imported TransactionID: 21 for Customer: 11166 - John Argeros
+
+11/9/2012 2:30:41 PM - Imported TransactionID: 22 for Customer: 11166 - John Argeros
+
+11/9/2012 2:30:42 PM - Imported TransactionID: 23 for Customer: 11166 - John Argeros
+
+11/9/2012 2:30:44 PM - Imported TransactionID: 24 for Customer: 11166 - John Argeros
+
+11/9/2012 2:30:45 PM - Imported TransactionID: 29 for Customer: 11208 - Cindy Adelstein
+
+11/9/2012 2:30:46 PM - Imported TransactionID: 30 for Customer: 11208 - Cindy Adelstein
+
+11/9/2012 2:30:48 PM - Imported TransactionID: 31 for Customer: 11208 - Cindy Adelstein
+
+11/9/2012 2:30:49 PM - Imported TransactionID: 32 for Customer: 11208 - Cindy Adelstein
+
+11/9/2012 2:30:50 PM - Imported TransactionID: 33 for Customer: 11219 - Andrew Allgood
+
+11/9/2012 2:30:52 PM - Imported TransactionID: 34 for Customer: 11219 - Andrew Allgood
+
+11/9/2012 2:30:53 PM - Imported TransactionID: 35 for Customer: 11219 - Andrew Allgood
+
+11/9/2012 2:30:54 PM - Imported TransactionID: 36 for Customer: 11219 - Andrew Allgood
+
+11/9/2012 2:30:56 PM - Imported TransactionID: 37 for Customer: 11234 - Nic Avalos
+
+11/9/2012 2:30:57 PM - Imported TransactionID: 38 for Customer: 11234 - Nic Avalos
+
+11/9/2012 2:30:58 PM - Imported TransactionID: 39 for Customer: 11234 - Nic Avalos
+
+11/9/2012 2:31:00 PM - Imported TransactionID: 40 for Customer: 11234 - Nic Avalos
+
+11/9/2012 2:31:01 PM - Imported TransactionID: 41 for Customer: 11251 - Johnn Aloia
+
+11/9/2012 2:31:02 PM - Imported TransactionID: 42 for Customer: 11251 - Johnn Aloia
+
+11/9/2012 2:31:04 PM - Imported TransactionID: 43 for Customer: 11251 - Johnn Aloia
+
+11/9/2012 2:31:05 PM - Imported TransactionID: 44 for Customer: 11251 - Johnn Aloia
+
+11/9/2012 2:31:06 PM - Imported TransactionID: 45 for Customer: 11319 - Mark Anema
+
+11/9/2012 2:31:07 PM - Imported TransactionID: 46 for Customer: 11319 - Mark Anema
+
+11/9/2012 2:31:09 PM - Imported TransactionID: 47 for Customer: 11319 - Mark Anema
+
+11/9/2012 2:31:10 PM - Imported TransactionID: 48 for Customer: 11319 - Mark Anema
+
+11/9/2012 2:31:12 PM - Imported TransactionID: 49 for Customer: 11340 - Samir Ayoub
+
+11/9/2012 2:31:13 PM - Imported TransactionID: 50 for Customer: 11340 - Samir Ayoub
+
+11/9/2012 2:31:14 PM - Imported TransactionID: 51 for Customer: 11340 - Samir Ayoub
+
+11/9/2012 2:31:16 PM - Imported TransactionID: 52 for Customer: 11340 - Samir Ayoub
+
+11/9/2012 2:31:17 PM - Imported TransactionID: 53 for Customer: 11390 - Phillip Aubin
+
+11/9/2012 2:31:18 PM - Imported TransactionID: 54 for Customer: 11390 - Phillip Aubin
+
+11/9/2012 2:31:20 PM - Imported TransactionID: 55 for Customer: 11390 - Phillip Aubin
+
+11/9/2012 2:31:21 PM - Imported TransactionID: 56 for Customer: 11390 - Phillip Aubin
+
+11/9/2012 2:31:22 PM - Imported TransactionID: 57 for Customer: 11407 - J. Aboud
+
+11/9/2012 2:31:24 PM - Imported TransactionID: 58 for Customer: 11407 - J. Aboud
+
+11/9/2012 2:31:25 PM - Imported TransactionID: 59 for Customer: 11407 - J. Aboud
+
+11/9/2012 2:31:26 PM - Imported TransactionID: 60 for Customer: 11407 - J. Aboud
+
+11/9/2012 2:31:28 PM - Imported TransactionID: 61 for Customer: 11433 - Dennis Adair
+
+11/9/2012 2:31:29 PM - Imported TransactionID: 62 for Customer: 11433 - Dennis Adair
+
+11/9/2012 2:31:30 PM - Imported TransactionID: 63 for Customer: 11433 - Dennis Adair
+
+11/9/2012 2:31:32 PM - Imported TransactionID: 64 for Customer: 11433 - Dennis Adair
+
+11/9/2012 2:31:33 PM - Imported TransactionID: 65 for Customer: 11573 - George Ayoub
+
+11/9/2012 2:31:34 PM - Imported TransactionID: 66 for Customer: 11573 - George Ayoub
+
+11/9/2012 2:31:36 PM - Imported TransactionID: 67 for Customer: 11573 - George Ayoub
+
+11/9/2012 2:31:37 PM - Imported TransactionID: 68 for Customer: 11573 - George Ayoub
+
+11/9/2012 2:31:38 PM - Imported TransactionID: 76 for Customer: 11830 - Russell Anderson
+
+11/9/2012 2:31:40 PM - Imported TransactionID: 77 for Customer: 11830 - Russell Anderson
+
+11/9/2012 2:31:41 PM - Imported TransactionID: 78 for Customer: 11830 - Russell Anderson
+
+11/9/2012 2:31:42 PM - Imported TransactionID: 79 for Customer: 11830 - Russell Anderson
+
+11/9/2012 2:31:44 PM - Imported TransactionID: 80 for Customer: 11855 - Judith Angeles
+
+11/9/2012 2:31:45 PM - Imported TransactionID: 81 for Customer: 11855 - Judith Angeles
+
+11/9/2012 2:31:46 PM - Imported TransactionID: 82 for Customer: 11855 - Judith Angeles
+
+11/9/2012 2:31:46 PM - Exorted 8 transactions to CSV File.
+
+11/9/2012 2:40:12 PM - Imported TransactionID: 17 for Customer: 11155 - Teresa Adams
+
+11/9/2012 2:40:14 PM - Imported TransactionID: 18 for Customer: 11155 - Teresa Adams
+
+11/9/2012 2:40:15 PM - Imported TransactionID: 19 for Customer: 11155 - Teresa Adams
+
+11/9/2012 2:40:16 PM - Imported TransactionID: 20 for Customer: 11155 - Teresa Adams
+
+11/9/2012 2:40:57 PM - Imported TransactionID: 73 for Customer: 11809 - Anil Agarwal
+
+11/9/2012 2:40:58 PM - Imported TransactionID: 74 for Customer: 11809 - Anil Agarwal
+
+11/9/2012 2:41:00 PM - Imported TransactionID: 75 for Customer: 11809 - Anil Agarwal
+
+11/9/2012 2:41:39 PM - Imported TransactionID: 25 for Customer: 11201 - Andrew Albert
+
+11/9/2012 2:41:40 PM - Imported TransactionID: 26 for Customer: 11201 - Andrew Albert
+
+11/9/2012 2:41:42 PM - Imported TransactionID: 27 for Customer: 11201 - Andrew Albert
+
+11/9/2012 2:41:43 PM - Imported TransactionID: 28 for Customer: 11201 - Andrew Albert
+
+11/11/2012 10:04:06 AM - Imported TransactionID: 8 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:04:07 AM - Imported TransactionID: 9 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:04:07 AM - Imported TransactionID: 10 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:04:08 AM - Imported TransactionID: 11 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:04:09 AM - Imported TransactionID: 12 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:04:10 AM - Imported TransactionID: 13 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:04:11 AM - Imported TransactionID: 14 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:04:12 AM - Imported TransactionID: 15 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:04:12 AM - Imported TransactionID: 16 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:04:13 AM - Imported TransactionID: 17 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:04:13 AM - Imported TransactionID: 18 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:04:14 AM - Imported TransactionID: 19 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:04:15 AM - Imported TransactionID: 20 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:04:16 AM - Imported TransactionID: 21 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:04:16 AM - Imported TransactionID: 22 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:04:17 AM - Imported TransactionID: 23 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:04:18 AM - Imported TransactionID: 24 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:04:18 AM - Imported TransactionID: 25 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:04:19 AM - Imported TransactionID: 26 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:04:20 AM - Imported TransactionID: 27 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:04:21 AM - Imported TransactionID: 28 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:04:21 AM - Imported TransactionID: 526 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:04:22 AM - Imported TransactionID: 527 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:04:23 AM - Imported TransactionID: 528 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:04:23 AM - Imported TransactionID: 529 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:04:24 AM - Imported TransactionID: 530 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:04:25 AM - Imported TransactionID: 531 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:04:25 AM - Imported TransactionID: 532 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:04:26 AM - Exorted 7 transactions to CSV File.
+
+11/11/2012 10:13:48 AM - Imported TransactionID: 8 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:13:49 AM - Imported TransactionID: 9 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:13:50 AM - Imported TransactionID: 10 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:13:50 AM - Imported TransactionID: 11 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:13:51 AM - Imported TransactionID: 12 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:13:52 AM - Imported TransactionID: 13 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:13:53 AM - Imported TransactionID: 14 for Customer: 10753 - Anthony Carroccia
+
+11/11/2012 10:13:53 AM - Imported TransactionID: 15 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:13:54 AM - Imported TransactionID: 16 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:13:55 AM - Imported TransactionID: 17 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:13:55 AM - Imported TransactionID: 18 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:13:56 AM - Imported TransactionID: 19 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:13:57 AM - Imported TransactionID: 20 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:13:57 AM - Imported TransactionID: 21 for Customer: 10755 - Kevin Bargamian
+
+11/11/2012 10:13:58 AM - Imported TransactionID: 22 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:13:59 AM - Imported TransactionID: 23 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:13:59 AM - Imported TransactionID: 24 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:14:00 AM - Imported TransactionID: 25 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:14:01 AM - Imported TransactionID: 26 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:14:01 AM - Imported TransactionID: 27 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:14:02 AM - Imported TransactionID: 28 for Customer: 10762 - Caroline Cesar
+
+11/11/2012 10:14:03 AM - Imported TransactionID: 526 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:14:04 AM - Imported TransactionID: 527 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:14:04 AM - Imported TransactionID: 528 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:14:05 AM - Imported TransactionID: 529 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:14:06 AM - Imported TransactionID: 530 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:14:06 AM - Imported TransactionID: 531 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:14:07 AM - Imported TransactionID: 532 for Customer: 11407 - J. Aboud
+
+11/11/2012 10:14:07 AM - Exorted 7 transactions to CSV File.

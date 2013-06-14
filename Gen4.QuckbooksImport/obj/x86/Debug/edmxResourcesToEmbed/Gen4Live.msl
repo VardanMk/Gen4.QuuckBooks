@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Gen4LiveModelStoreContainer" CdmEntityContainer="Gen4LiveEntities">
+    <EntitySetMapping Name="ContactPersons">
+      <EntityTypeMapping TypeName="Gen4LiveModel.ContactPerson">
+        <MappingFragment StoreEntitySet="ContactPersons">
+          <ScalarProperty Name="ContactPersonID" ColumnName="ContactPersonID" />
+          <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+          <ScalarProperty Name="EntityScope" ColumnName="EntityScope" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="ContactPersonType" ColumnName="ContactPersonType" />
+          <ScalarProperty Name="PrincipalID" ColumnName="PrincipalID" />
+          <ScalarProperty Name="Salt" ColumnName="Salt" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+          <ScalarProperty Name="NamePrefix" ColumnName="NamePrefix" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="NameSuffix" ColumnName="NameSuffix" />
+          <ScalarProperty Name="Accreditation" ColumnName="Accreditation" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Suite" ColumnName="Suite" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Country2" ColumnName="Country2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdaCustomers">
+      <EntityTypeMapping TypeName="Gen4LiveModel.IdaCustomer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+          <ScalarProperty Name="Salt" ColumnName="Salt" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="ResellerID" ColumnName="ResellerID" />
+          <ScalarProperty Name="PromotionCode" ColumnName="PromotionCode" />
+          <ScalarProperty Name="SourceKey" ColumnName="SourceKey" />
+          <ScalarProperty Name="CompanyName" ColumnName="Company" />
+          <ScalarProperty Name="ModelKey" ColumnName="ModelKey" />
+          <ScalarProperty Name="TermsAcceptedDate" ColumnName="TermsAcceptedDate" />
+          <ScalarProperty Name="TrialStartDate" ColumnName="TrialStartDate" />
+          <ScalarProperty Name="TrialExpirationDate" ColumnName="TrialExpirationDate" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeadTrackingEvents">
+      <EntityTypeMapping TypeName="Gen4LiveModel.LeadTrackingEvent">
+        <MappingFragment StoreEntitySet="LeadTrackingEvents">
+          <ScalarProperty Name="LeadTrackingEventID" ColumnName="LeadTrackingEventID" />
+          <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+          <ScalarProperty Name="EntityScope" ColumnName="EntityScope" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="NotificationTypeKey" ColumnName="NotificationTypeKey" />
+          <ScalarProperty Name="Variant" ColumnName="Variant" />
+          <ScalarProperty Name="NotificationContent" ColumnName="NotificationContent" />
+          <ScalarProperty Name="CountedEvent" ColumnName="CountedEvent" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Principals">
+      <EntityTypeMapping TypeName="Gen4LiveModel.Principal">
+        <MappingFragment StoreEntitySet="Principals">
+          <ScalarProperty Name="PrincipalID" ColumnName="PrincipalID" />
+          <ScalarProperty Name="PrincipalType" ColumnName="PrincipalType" />
+          <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="PasswordDigest" ColumnName="PasswordDigest" />
+          <ScalarProperty Name="Salt" ColumnName="Salt" />
+          <ScalarProperty Name="EncryptedPassword" ColumnName="EncryptedPassword" />
+          <ScalarProperty Name="FailedLoginAttempts" ColumnName="FailedLoginAttempts" />
+          <ScalarProperty Name="FailedLoginLockoutTime" ColumnName="FailedLoginLockoutTime" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerStatuses">
+      <EntityTypeMapping TypeName="Gen4LiveModel.CustomerStatus">
+        <MappingFragment StoreEntitySet="CustomerStatuses">
+          <ScalarProperty Name="DisplayPriority" ColumnName="DisplayPriority" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="CustomerStatusID" ColumnName="CustomerStatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerLocations">
+      <EntityTypeMapping TypeName="Gen4LiveModel.CustomerLocation">
+        <MappingFragment StoreEntitySet="CustomerLocations">
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsGeocodingPending" ColumnName="IsGeocodingPending" />
+          <ScalarProperty Name="LeadsVoiceIVR" ColumnName="LeadsVoiceIVR" />
+          <ScalarProperty Name="LeadsSMS" ColumnName="LeadsSMS" />
+          <ScalarProperty Name="LeadsFax" ColumnName="LeadsFax" />
+          <ScalarProperty Name="LeadsEmail" ColumnName="LeadsEmail" />
+          <ScalarProperty Name="ApptPhone" ColumnName="ApptPhone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="GeographicRegion" ColumnName="GeographicRegion" />
+          <ScalarProperty Name="Country2" ColumnName="Country2" />
+          <ScalarProperty Name="CountyIsParish" ColumnName="CountyIsParish" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Suite" ColumnName="Suite" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="GeocodePrecision" ColumnName="GeocodePrecision" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Demographic" ColumnName="Demographic" />
+          <ScalarProperty Name="IsPrimary" ColumnName="IsPrimary" />
+          <ScalarProperty Name="LocationStatus" ColumnName="LocationStatus" />
+          <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Websites">
+      <EntityTypeMapping TypeName="Gen4LiveModel.Website">
+        <MappingFragment StoreEntitySet="Websites">
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsNoSearchEngines" ColumnName="IsNoSearchEngines" />
+          <ScalarProperty Name="IsPublished" ColumnName="IsPublished" />
+          <ScalarProperty Name="FavIcon" ColumnName="FavIcon" />
+          <ScalarProperty Name="EnableGoogleWebmasterKey" ColumnName="EnableGoogleWebmasterKey" />
+          <ScalarProperty Name="EnableGoogleAnalytics" ColumnName="EnableGoogleAnalytics" />
+          <ScalarProperty Name="GoogleWebmasterKey" ColumnName="GoogleWebmasterKey" />
+          <ScalarProperty Name="GoogleAnalyticsKey" ColumnName="GoogleAnalyticsKey" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="SkinKey" ColumnName="SkinKey" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="Salt" ColumnName="Salt" />
+          <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="WebsiteID" ColumnName="WebsiteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gen4PplLedger">
+      <EntityTypeMapping TypeName="Gen4LiveModel.Gen4PplLedger">
+        <MappingFragment StoreEntitySet="Gen4PplLedger">
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="ReportStatus" ColumnName="ReportStatus" />
+          <ScalarProperty Name="IsReported" ColumnName="IsReported" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="LeadType" ColumnName="LeadType" />
+          <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+          <ScalarProperty Name="LeadID" ColumnName="LeadID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ParentTransactionID" ColumnName="ParentTransactionID" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerDataFlakes">
+      <EntityTypeMapping TypeName="Gen4LiveModel.CustomerDataFlake">
+        <MappingFragment StoreEntitySet="CustomerDataFlakes">
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="JsonSchema" ColumnName="JsonSchema" />
+          <ScalarProperty Name="JsonData" ColumnName="JsonData" />
+          <ScalarProperty Name="DataIndex" ColumnName="DataIndex" />
+          <ScalarProperty Name="DataKey" ColumnName="DataKey" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="ContentScope" ColumnName="ContentScope" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="MarketID" ColumnName="MarketID" />
+          <ScalarProperty Name="FlakeID" ColumnName="FlakeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,1604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.RSSBus.QuickBooks" ProviderManifestToken="QuickBooks" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="CreditMemoLineItems" EntityType="Model.Store.CreditMemoLineItems" store:Type="Tables" Schema="" />
+          <EntitySet Name="CreditMemos" EntityType="Model.Store.CreditMemos" store:Type="Tables" Schema="" />
+          <EntitySet Name="Customers" EntityType="Model.Store.Customers" store:Type="Tables" Schema="" />
+          <EntitySet Name="InvoiceLineItems" EntityType="Model.Store.InvoiceLineItems" store:Type="Tables" Schema="" />
+          <EntitySet Name="Invoices" EntityType="Model.Store.Invoices" store:Type="Tables" Schema="" />
+          <EntitySet Name="ItemLineItems" EntityType="Model.Store.ItemLineItems" store:Type="Tables" Schema="" />
+          <EntitySet Name="Items" EntityType="Model.Store.Items" store:Type="Tables" Schema="" />
+        </EntityContainer>
+        <EntityType Name="CreditMemoLineItems">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="string" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CreditMemoId" Type="string" />
+          <Property Name="ReferenceNumber" Type="string" />
+          <Property Name="TxnNumber" Type="string" />
+          <Property Name="Date" Type="date" />
+          <Property Name="CustomerName" Type="string" />
+          <Property Name="CustomerId" Type="string" />
+          <Property Name="AccountsReceivableID" Type="string" />
+          <Property Name="AccountsReceivable" Type="string" />
+          <Property Name="ShipMethod" Type="string" />
+          <Property Name="ShipMethodId" Type="string" />
+          <Property Name="ShipDate" Type="date" />
+          <Property Name="Memo" Type="string" />
+          <Property Name="Amount" Type="double" Scale="6" />
+          <Property Name="Message" Type="string" />
+          <Property Name="MessageId" Type="string" />
+          <Property Name="SalesRep" Type="string" />
+          <Property Name="SalesRepId" Type="string" />
+          <Property Name="FOB" Type="string" />
+          <Property Name="BillingAddress" Type="string" />
+          <Property Name="BillingLine1" Type="string" />
+          <Property Name="BillingLine2" Type="string" />
+          <Property Name="BillingLine3" Type="string" />
+          <Property Name="BillingLine4" Type="string" />
+          <Property Name="BillingLine5" Type="string" />
+          <Property Name="BillingCity" Type="string" />
+          <Property Name="BillingState" Type="string" />
+          <Property Name="BillingPostalCode" Type="string" />
+          <Property Name="BillingCountry" Type="string" />
+          <Property Name="ShippingAddress" Type="string" />
+          <Property Name="ShippingLine1" Type="string" />
+          <Property Name="ShippingLine2" Type="string" />
+          <Property Name="ShippingLine3" Type="string" />
+          <Property Name="ShippingLine4" Type="string" />
+          <Property Name="ShippingLine5" Type="string" />
+          <Property Name="ShippingCity" Type="string" />
+          <Property Name="ShippingState" Type="string" />
+          <Property Name="ShippingPostalCode" Type="string" />
+          <Property Name="ShippingCountry" Type="string" />
+          <Property Name="Subtotal" Type="double" Scale="6" />
+          <Property Name="Tax" Type="double" Scale="6" />
+          <Property Name="TaxAgency" Type="string" />
+          <Property Name="TaxAgencyId" Type="string" />
+          <Property Name="TaxPercent" Type="double" Scale="6" />
+          <Property Name="IsPending" Type="int" />
+          <Property Name="PONumber" Type="string" />
+          <Property Name="Terms" Type="string" />
+          <Property Name="TermsId" Type="string" />
+          <Property Name="CreditRemaining" Type="double" Scale="6" />
+          <Property Name="DueDate" Type="date" />
+          <Property Name="Template" Type="string" />
+          <Property Name="TemplateId" Type="string" />
+          <Property Name="CustomerSalesTax" Type="string" />
+          <Property Name="CustomerSalesTaxId" Type="string" />
+          <Property Name="Class" Type="string" />
+          <Property Name="ClassId" Type="string" />
+          <Property Name="ExchangeRate" Type="double" Scale="6" />
+          <Property Name="CustomFields" Type="string" />
+          <Property Name="ItemLineId" Type="string" />
+          <Property Name="ItemId" Type="string" />
+          <Property Name="ItemName" Type="string" />
+          <Property Name="ItemGroup" Type="string" />
+          <Property Name="ItemGroupId" Type="string" />
+          <Property Name="ItemDescription" Type="string" />
+          <Property Name="ItemQuantity" Type="double" Scale="6" />
+          <Property Name="ItemRate" Type="double" Scale="6" />
+          <Property Name="ItemTaxCode" Type="string" />
+          <Property Name="ItemTaxCodeId" Type="string" />
+          <Property Name="ItemAmount" Type="double" Scale="6" />
+          <Property Name="ItemClass" Type="string" />
+          <Property Name="ItemClassId" Type="string" />
+          <Property Name="ItemOther1" Type="string" />
+          <Property Name="ItemOther2" Type="string" />
+          <Property Name="ItemCustomFields" Type="string" />
+          <Property Name="EditSequence" Type="string" />
+          <Property Name="TimeModified" Type="datetime" />
+          <Property Name="TimeCreated" Type="datetime" />
+        </EntityType>
+        <EntityType Name="CreditMemos">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="string" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ReferenceNumber" Type="string" />
+          <Property Name="TxnNumber" Type="string" />
+          <Property Name="Date" Type="date" />
+          <Property Name="CustomerName" Type="string" />
+          <Property Name="CustomerId" Type="string" />
+          <Property Name="AccountsReceivableID" Type="string" />
+          <Property Name="AccountsReceivable" Type="string" />
+          <Property Name="ShipMethod" Type="string" />
+          <Property Name="ShipMethodId" Type="string" />
+          <Property Name="ShipDate" Type="date" />
+          <Property Name="Memo" Type="string" />
+          <Property Name="Amount" Type="double" Scale="6" />
+          <Property Name="Message" Type="string" />
+          <Property Name="MessageId" Type="string" />
+          <Property Name="SalesRep" Type="string" />
+          <Property Name="SalesRepId" Type="string" />
+          <Property Name="FOB" Type="string" />
+          <Property Name="BillingAddress" Type="string" />
+          <Property Name="BillingLine1" Type="string" />
+          <Property Name="BillingLine2" Type="string" />
+          <Property Name="BillingLine3" Type="string" />
+          <Property Name="BillingLine4" Type="string" />
+          <Property Name="BillingLine5" Type="string" />
+          <Property Name="BillingCity" Type="string" />
+          <Property Name="BillingState" Type="string" />
+          <Property Name="BillingPostalCode" Type="string" />
+          <Property Name="BillingCountry" Type="string" />
+          <Property Name="ShippingAddress" Type="string" />
+          <Property Name="ShippingLine1" Type="string" />
+          <Property Name="ShippingLine2" Type="string" />
+          <Property Name="ShippingLine3" Type="string" />
+          <Property Name="ShippingLine4" Type="string" />
+          <Property Name="ShippingLine5" Type="string" />
+          <Property Name="ShippingCity" Type="string" />
+          <Property Name="ShippingState" Type="string" />
+          <Property Name="ShippingPostalCode" Type="string" />
+          <Property Name="ShippingCountry" Type="string" />
+          <Property Name="Subtotal" Type="double" Scale="6" />
+          <Property Name="Tax" Type="double" Scale="6" />
+          <Property Name="TaxAgency" Type="string" />
+          <Property Name="TaxAgencyId" Type="string" />
+          <Property Name="TaxPercent" Type="double" Scale="6" />
+          <Property Name="IsPending" Type="int" />
+          <Property Name="IsToBePrinted" Type="int" />
+          <Property Name="PONumber" Type="string" />
+          <Property Name="Terms" Type="string" />
+          <Property Name="TermsId" Type="string" />
+          <Property Name="CreditRemaining" Type="double" Scale="6" />
+          <Property Name="DueDate" Type="date" />
+          <Property Name="Template" Type="string" />
+          <Property Name="TemplateId" Type="string" />
+          <Property Name="CustomerSalesTax" Type="string" />
+          <Property Name="CustomerSalesTaxId" Type="string" />
+          <Property Name="Class" Type="string" />
+          <Property Name="ClassId" Type="string" />
+          <Property Name="ExchangeRate" Type="double" Scale="6" />
+          <Property Name="ItemCount" Type="integer" />
+          <Property Name="ItemAggregate" Type="string" />
+          <Property Name="TransactionCount" Type="integer" />
+          <Property Name="TransactionAggregate" Type="string" />
+          <Property Name="CustomFields" Type="string" />
+          <Property Name="EditSequence" Type="string" />
+          <Property Name="TimeModified" Type="datetime" />
+          <Property Name="TimeCreated" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Customers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="string" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="string" />
+          <Property Name="Salutation" Type="string" />
+          <Property Name="FirstName" Type="string" />
+          <Property Name="MiddleInitial" Type="string" />
+          <Property Name="LastName" Type="string" />
+          <Property Name="FullName" Type="string" />
+          <Property Name="AccountNumber" Type="string" />
+          <Property Name="Company" Type="string" />
+          <Property Name="Balance" Type="double" Scale="6" />
+          <Property Name="CustomerBalance" Type="double" Scale="6" />
+          <Property Name="Contact" Type="string" />
+          <Property Name="Type" Type="string" />
+          <Property Name="TypeId" Type="string" />
+          <Property Name="Phone" Type="string" />
+          <Property Name="Fax" Type="string" />
+          <Property Name="AlternateContact" Type="string" />
+          <Property Name="AlternatePhone" Type="string" />
+          <Property Name="Email" Type="string" />
+          <Property Name="Notes" Type="string" />
+          <Property Name="ParentName" Type="string" />
+          <Property Name="ParentId" Type="string" />
+          <Property Name="Sublevel" Type="string" />
+          <Property Name="JobStatus" Type="string" />
+          <Property Name="JobStartDate" Type="date" />
+          <Property Name="JobProjectedEndDate" Type="date" />
+          <Property Name="JobEndDate" Type="date" />
+          <Property Name="JobDescription" Type="string" />
+          <Property Name="JobTypeId" Type="string" />
+          <Property Name="JobType" Type="string" />
+          <Property Name="CreditCardAddress" Type="string" />
+          <Property Name="CreditCardExpMonth" Type="string" />
+          <Property Name="CreditCardExpYear" Type="string" />
+          <Property Name="CreditCardNameOnCard" Type="string" />
+          <Property Name="CreditCardNumber" Type="string" />
+          <Property Name="CreditCardPostalCode" Type="string" />
+          <Property Name="CreditLimit" Type="double" Scale="6" />
+          <Property Name="BillingAddress" Type="string" />
+          <Property Name="BillingLine1" Type="string" />
+          <Property Name="BillingLine2" Type="string" />
+          <Property Name="BillingLine3" Type="string" />
+          <Property Name="BillingLine4" Type="string" />
+          <Property Name="BillingLine5" Type="string" />
+          <Property Name="BillingCity" Type="string" />
+          <Property Name="BillingState" Type="string" />
+          <Property Name="BillingPostalCode" Type="string" />
+          <Property Name="BillingCountry" Type="string" />
+          <Property Name="ShippingAddress" Type="string" />
+          <Property Name="ShippingLine1" Type="string" />
+          <Property Name="ShippingLine2" Type="string" />
+          <Property Name="ShippingLine3" Type="string" />
+          <Property Name="ShippingLine4" Type="string" />
+          <Property Name="ShippingLine5" Type="string" />
+          <Property Name="ShippingCity" Type="string" />
+          <Property Name="ShippingState" Type="string" />
+          <Property Name="ShippingPostalCode" Type="string" />
+          <Property Name="ShippingCountry" Type="string" />
+          <Property Name="ResaleNumber" Type="string" />
+          <Property Name="SalesRep" Type="string" />
+          <Property Name="SalesRepId" Type="string" />
+          <Property Name="Terms" Type="string" />
+          <Property Name="TermsId" Type="string" />
+          <Property Name="CurrencyName" Type="string" />
+          <Property Name="CurrencyId" Type="string" />
+          <Property Name="TaxCode" Type="string" />
+          <Property Name="TaxCodeId" Type="string" />
+          <Property Name="TaxItem" Type="string" />
+          <Property Name="TaxItemId" Type="string" />
+          <Property Name="PriceLevel" Type="string" />
+          <Property Name="PriceLevelId" Type="string" />
+          <Property Name="PreferredPaymentMethodName" Type="string" />
+          <Property Name="PreferredPaymentMethodId" Type="string" />
+          <Property Name="PrintAs" Type="string" />
+          <Property Name="IsActive" Type="int" />
+          <Property Name="CustomFields" Type="string" />
+          <Property Name="EditSequence" Type="string" />
+          <Property Name="TimeModified" Type="datetime" />
+          <Property Name="TimeCreated" Type="datetime" />
+        </EntityType>
+        <EntityType Name="InvoiceLineItems">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="string" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="InvoiceId" Type="string" />
+          <Property Name="ReferenceNumber" Type="string" />
+          <Property Name="TxnNumber" Type="string" />
+          <Property Name="CustomerName" Type="string" />
+          <Property Name="CustomerId" Type="string" />
+          <Property Name="Account" Type="string" />
+          <Property Name="AccountId" Type="string" />
+          <Property Name="Date" Type="date" />
+          <Property Name="ShipMethod" Type="string" />
+          <Property Name="ShipMethodId" Type="string" />
+          <Property Name="ShipDate" Type="date" />
+          <Property Name="Memo" Type="string" />
+          <Property Name="Class" Type="string" />
+          <Property Name="ClassId" Type="string" />
+          <Property Name="Amount" Type="double" Scale="6" />
+          <Property Name="Message" Type="string" />
+          <Property Name="MessageId" Type="string" />
+          <Property Name="SalesRep" Type="string" />
+          <Property Name="SalesRepId" Type="string" />
+          <Property Name="FOB" Type="string" />
+          <Property Name="BillingAddress" Type="string" />
+          <Property Name="BillingLine1" Type="string" />
+          <Property Name="BillingLine2" Type="string" />
+          <Property Name="BillingLine3" Type="string" />
+          <Property Name="BillingLine4" Type="string" />
+          <Property Name="BillingLine5" Type="string" />
+          <Property Name="BillingCity" Type="string" />
+          <Property Name="BillingState" Type="string" />
+          <Property Name="BillingPostalCode" Type="string" />
+          <Property Name="BillingCountry" Type="string" />
+          <Property Name="ShippingAddress" Type="string" />
+          <Property Name="ShippingLine1" Type="string" />
+          <Property Name="ShippingLine2" Type="string" />
+          <Property Name="ShippingLine3" Type="string" />
+          <Property Name="ShippingLine4" Type="string" />
+          <Property Name="ShippingLine5" Type="string" />
+          <Property Name="ShippingCity" Type="string" />
+          <Property Name="ShippingState" Type="string" />
+          <Property Name="ShippingPostalCode" Type="string" />
+          <Property Name="ShippingCountry" Type="string" />
+          <Property Name="Subtotal" Type="double" Scale="6" />
+          <Property Name="Tax" Type="double" Scale="6" />
+          <Property Name="TaxAgency" Type="string" />
+          <Property Name="TaxAgencyId" Type="string" />
+          <Property Name="TaxPercent" Type="double" Scale="6" />
+          <Property Name="POnumber" Type="string" />
+          <Property Name="DueDate" Type="date" />
+          <Property Name="Terms" Type="string" />
+          <Property Name="TermsId" Type="string" />
+          <Property Name="CustomFields" Type="string" />
+          <Property Name="ItemLineId" Type="string" />
+          <Property Name="ItemId" Type="string" />
+          <Property Name="ItemName" Type="string" />
+          <Property Name="ItemGroup" Type="string" />
+          <Property Name="ItemGroupId" Type="string" />
+          <Property Name="ItemDescription" Type="string" />
+          <Property Name="ItemQuantity" Type="double" Scale="6" />
+          <Property Name="ItemRate" Type="double" Scale="6" />
+          <Property Name="ItemTaxCode" Type="string" />
+          <Property Name="ItemTaxCodeId" Type="string" />
+          <Property Name="ItemAmount" Type="double" Scale="6" />
+          <Property Name="ItemClass" Type="string" />
+          <Property Name="ItemClassId" Type="string" />
+          <Property Name="ItemOther1" Type="string" />
+          <Property Name="ItemOther2" Type="string" />
+          <Property Name="ItemCustomFields" Type="string" />
+          <Property Name="AppliedAmount" Type="double" Scale="6" />
+          <Property Name="Balance" Type="double" Scale="6" />
+          <Property Name="CustomerTaxCode" Type="string" />
+          <Property Name="CustomerTaxCodeId" Type="string" />
+          <Property Name="IsToBePrinted" Type="int" />
+          <Property Name="IsToBeEmailed" Type="int" />
+          <Property Name="IsPaid" Type="int" />
+          <Property Name="IsTaxIncluded" Type="int" />
+          <Property Name="IsPending" Type="int" />
+          <Property Name="IsFinanceCharge" Type="string" />
+          <Property Name="Template" Type="string" />
+          <Property Name="TemplateId" Type="string" />
+          <Property Name="SuggestedDiscountAmount" Type="double" Scale="6" />
+          <Property Name="SuggestedDiscountDate" Type="date" />
+          <Property Name="ExchangeRate" Type="double" Scale="6" />
+          <Property Name="BalanceInHomeCurrency" Type="string" />
+          <Property Name="CurrencyName" Type="string" />
+          <Property Name="CurrencyId" Type="string" />
+          <Property Name="Other" Type="string" />
+          <Property Name="EditSequence" Type="string" />
+          <Property Name="TimeModified" Type="datetime" />
+          <Property Name="TimeCreated" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Invoices">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="string" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ReferenceNumber" Type="string" />
+          <Property Name="TxnNumber" Type="string" />
+          <Property Name="CustomerName" Type="string" />
+          <Property Name="CustomerId" Type="string" />
+          <Property Name="Account" Type="string" />
+          <Property Name="AccountId" Type="string" />
+          <Property Name="Date" Type="date" />
+          <Property Name="ShipMethod" Type="string" />
+          <Property Name="ShipMethodId" Type="string" />
+          <Property Name="ShipDate" Type="date" />
+          <Property Name="Memo" Type="string" />
+          <Property Name="Class" Type="string" />
+          <Property Name="ClassId" Type="string" />
+          <Property Name="Amount" Type="double" Scale="6" />
+          <Property Name="Message" Type="string" />
+          <Property Name="MessageId" Type="string" />
+          <Property Name="SalesRep" Type="string" />
+          <Property Name="SalesRepId" Type="string" />
+          <Property Name="FOB" Type="string" />
+          <Property Name="BillingAddress" Type="string" />
+          <Property Name="BillingLine1" Type="string" />
+          <Property Name="BillingLine2" Type="string" />
+          <Property Name="BillingLine3" Type="string" />
+          <Property Name="BillingLine4" Type="string" />
+          <Property Name="BillingLine5" Type="string" />
+          <Property Name="BillingCity" Type="string" />
+          <Property Name="BillingState" Type="string" />
+          <Property Name="BillingPostalCode" Type="string" />
+          <Property Name="BillingCountry" Type="string" />
+          <Property Name="ShippingAddress" Type="string" />
+          <Property Name="ShippingLine1" Type="string" />
+          <Property Name="ShippingLine2" Type="string" />
+          <Property Name="ShippingLine3" Type="string" />
+          <Property Name="ShippingLine4" Type="string" />
+          <Property Name="ShippingLine5" Type="string" />
+          <Property Name="ShippingCity" Type="string" />
+          <Property Name="ShippingState" Type="string" />
+          <Property Name="ShippingPostalCode" Type="string" />
+          <Property Name="ShippingCountry" Type="string" />
+          <Property Name="Subtotal" Type="double" Scale="6" />
+          <Property Name="Tax" Type="double" Scale="6" />
+          <Property Name="TaxAgency" Type="string" />
+          <Property Name="TaxAgencyId" Type="string" />
+          <Property Name="TaxPercent" Type="double" Scale="6" />
+          <Property Name="POnumber" Type="string" />
+          <Property Name="DueDate" Type="date" />
+          <Property Name="Terms" Type="string" />
+          <Property Name="TermsId" Type="string" />
+          <Property Name="ItemCount" Type="integer" />
+          <Property Name="ItemAggregate" Type="string" />
+          <Property Name="TransactionCount" Type="integer" />
+          <Property Name="TransactionAggregate" Type="string" />
+          <Property Name="AppliedAmount" Type="double" Scale="6" />
+          <Property Name="Balance" Type="double" Scale="6" />
+          <Property Name="CustomerTaxCode" Type="string" />
+          <Property Name="CustomerTaxCodeId" Type="string" />
+          <Property Name="IsToBePrinted" Type="int" />
+          <Property Name="IsToBeEmailed" Type="int" />
+          <Property Name="IsPaid" Type="int" />
+          <Property Name="IsTaxIncluded" Type="int" />
+          <Property Name="IsPending" Type="int" />
+          <Property Name="IsFinanceCharge" Type="string" />
+          <Property Name="Template" Type="string" />
+          <Property Name="TemplateId" Type="string" />
+          <Property Name="SuggestedDiscountAmount" Type="double" Scale="6" />
+          <Property Name="SuggestedDiscountDate" Type="date" />
+          <Property Name="ExchangeRate" Type="double" Scale="6" />
+          <Property Name="BalanceInHomeCurrency" Type="string" />
+          <Property Name="CurrencyName" Type="string" />
+          <Property Name="CurrencyId" Type="string" />
+          <Property Name="Other" Type="string" />
+          <Property Name="CustomFields" Type="string" />
+          <Property Name="EditSequence" Type="string" />
+          <Property Name="TimeModified" Type="datetime" />
+          <Property Name="TimeCreated" Type="datetime" />
+        </EntityType>
+        <EntityType Name="ItemLineItems">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="string" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ItemId" Type="string" />
+          <Property Name="Name" Type="string" />
+          <Property Name="Type" Type="string" />
+          <Property Name="Account" Type="string" />
+          <Property Name="AccountId" Type="string" />
+          <Property Name="COGSAccount" Type="string" />
+          <Property Name="COGSAccountId" Type="string" />
+          <Property Name="AssetAccount" Type="string" />
+          <Property Name="AssetAccountId" Type="string" />
+          <Property Name="LineItemId" Type="string" />
+          <Property Name="LineItemName" Type="string" />
+          <Property Name="LineItemQuantity" Type="double" Scale="6" />
+          <Property Name="ParentName" Type="string" />
+          <Property Name="ParentId" Type="string" />
+          <Property Name="Description" Type="string" />
+          <Property Name="Price" Type="double" Scale="6" />
+          <Property Name="AverageCost" Type="double" Scale="6" />
+          <Property Name="IsActive" Type="int" />
+          <Property Name="PurchaseCost" Type="double" Scale="6" />
+          <Property Name="PurchaseDescription" Type="string" />
+          <Property Name="ExpenseAccount" Type="string" />
+          <Property Name="PreferredVendor" Type="string" />
+          <Property Name="PreferredVendorId" Type="string" />
+          <Property Name="TaxCode" Type="string" />
+          <Property Name="TaxCodeId" Type="string" />
+          <Property Name="FullName" Type="string" />
+          <Property Name="CustomFields" Type="string" />
+          <Property Name="TimeModified" Type="datetime" />
+          <Property Name="TimeCreated" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Items">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="string" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="string" />
+          <Property Name="FullName" Type="string" />
+          <Property Name="Type" Type="string" />
+          <Property Name="Account" Type="string" />
+          <Property Name="AccountId" Type="string" />
+          <Property Name="COGSAccount" Type="string" />
+          <Property Name="COGSAccountId" Type="string" />
+          <Property Name="AssetAccount" Type="string" />
+          <Property Name="AssetAccountId" Type="string" />
+          <Property Name="DateSold" Type="datetime" />
+          <Property Name="PurchaseDate" Type="string" />
+          <Property Name="ItemCount" Type="integer" />
+          <Property Name="ParentName" Type="string" />
+          <Property Name="ParentId" Type="string" />
+          <Property Name="Description" Type="string" />
+          <Property Name="Price" Type="double" Scale="6" />
+          <Property Name="PricePercent" Type="double" Scale="6" />
+          <Property Name="AverageCost" Type="double" Scale="6" />
+          <Property Name="IsActive" Type="int" />
+          <Property Name="PurchaseCost" Type="double" Scale="6" />
+          <Property Name="PurchaseDescription" Type="string" />
+          <Property Name="ExpenseAccount" Type="string" />
+          <Property Name="ExpenseAccountId" Type="string" />
+          <Property Name="PreferredVendor" Type="string" />
+          <Property Name="PreferredVendorId" Type="string" />
+          <Property Name="QuantityOnHand" Type="double" Scale="6" />
+          <Property Name="QuantityOnOrder" Type="double" Scale="6" />
+          <Property Name="QuantityOnSalesOrder" Type="double" Scale="6" />
+          <Property Name="InventoryDate" Type="date" />
+          <Property Name="ReorderPoint" Type="string" />
+          <Property Name="TaxCode" Type="string" />
+          <Property Name="TaxCodeId" Type="string" />
+          <Property Name="PartNumber" Type="string" />
+          <Property Name="PaymentMethodName" Type="string" />
+          <Property Name="PaymentMethodId" Type="string" />
+          <Property Name="TaxRate" Type="double" Scale="6" />
+          <Property Name="TaxVendorName" Type="string" />
+          <Property Name="TaxVendorId" Type="string" />
+          <Property Name="SpecialItemType" Type="string" />
+          <Property Name="VendorOrPayeeName" Type="string" />
+          <Property Name="SalesExpense" Type="string" />
+          <Property Name="AssetAcquiredAs" Type="string" />
+          <Property Name="AssetDescription" Type="string" />
+          <Property Name="AssetLocation" Type="string" />
+          <Property Name="AssetPONumber" Type="string" />
+          <Property Name="AssetSerialNumber" Type="string" />
+          <Property Name="AssetWarrantyExpires" Type="string" />
+          <Property Name="AssetNotes" Type="string" />
+          <Property Name="AssetNumber" Type="string" />
+          <Property Name="AssetCostBasis" Type="double" Scale="6" />
+          <Property Name="AssetDepreciation" Type="double" Scale="6" />
+          <Property Name="AssetBookValue" Type="double" Scale="6" />
+          <Property Name="UnitOfMeasure" Type="string" />
+          <Property Name="UnitOfMeasureId" Type="string" />
+          <Property Name="Sublevel" Type="integer" />
+          <Property Name="CustomFields" Type="string" />
+          <Property Name="EditSequence" Type="string" />
+          <Property Name="TimeModified" Type="datetime" />
+          <Property Name="TimeCreated" Type="datetime" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="IdaQuickbookEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CreditMemoLineItems" EntityType="Model.CreditMemoLineItem" />
+          <EntitySet Name="CreditMemos" EntityType="Model.CreditMemo" />
+          <EntitySet Name="Customers" EntityType="Model.Customer" />
+          <EntitySet Name="InvoiceLineItems" EntityType="Model.InvoiceLineItem" />
+          <EntitySet Name="Invoices" EntityType="Model.Invoice" />
+          <EntitySet Name="ItemLineItems" EntityType="Model.ItemLineItem" />
+          <EntitySet Name="Items" EntityType="Model.Item" />
+        </EntityContainer>
+        <EntityType Name="CreditMemoLineItem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="CreditMemoId" />
+          <Property Type="String" Name="ReferenceNumber" />
+          <Property Type="String" Name="TxnNumber" />
+          <Property Type="DateTime" Name="Date" />
+          <Property Type="String" Name="CustomerName" />
+          <Property Type="String" Name="CustomerId" />
+          <Property Type="String" Name="AccountsReceivableID" />
+          <Property Type="String" Name="AccountsReceivable" />
+          <Property Type="String" Name="ShipMethod" />
+          <Property Type="String" Name="ShipMethodId" />
+          <Property Type="DateTime" Name="ShipDate" />
+          <Property Type="String" Name="Memo" />
+          <Property Type="Decimal" Name="Amount" />
+          <Property Type="String" Name="Message" />
+          <Property Type="String" Name="MessageId" />
+          <Property Type="String" Name="SalesRep" />
+          <Property Type="String" Name="SalesRepId" />
+          <Property Type="String" Name="FOB" />
+          <Property Type="String" Name="BillingAddress" />
+          <Property Type="String" Name="BillingLine1" />
+          <Property Type="String" Name="BillingLine2" />
+          <Property Type="String" Name="BillingLine3" />
+          <Property Type="String" Name="BillingLine4" />
+          <Property Type="String" Name="BillingLine5" />
+          <Property Type="String" Name="BillingCity" />
+          <Property Type="String" Name="BillingState" />
+          <Property Type="String" Name="BillingPostalCode" />
+          <Property Type="String" Name="BillingCountry" />
+          <Property Type="String" Name="ShippingAddress" />
+          <Property Type="String" Name="ShippingLine1" />
+          <Property Type="String" Name="ShippingLine2" />
+          <Property Type="String" Name="ShippingLine3" />
+          <Property Type="String" Name="ShippingLine4" />
+          <Property Type="String" Name="ShippingLine5" />
+          <Property Type="String" Name="ShippingCity" />
+          <Property Type="String" Name="ShippingState" />
+          <Property Type="String" Name="ShippingPostalCode" />
+          <Property Type="String" Name="ShippingCountry" />
+          <Property Type="Decimal" Name="Subtotal" />
+          <Property Type="Decimal" Name="Tax" />
+          <Property Type="String" Name="TaxAgency" />
+          <Property Type="String" Name="TaxAgencyId" />
+          <Property Type="Decimal" Name="TaxPercent" />
+          <Property Type="Int32" Name="IsPending" />
+          <Property Type="String" Name="PONumber" />
+          <Property Type="String" Name="Terms" />
+          <Property Type="String" Name="TermsId" />
+          <Property Type="Decimal" Name="CreditRemaining" />
+          <Property Type="DateTime" Name="DueDate" />
+          <Property Type="String" Name="Template" />
+          <Property Type="String" Name="TemplateId" />
+          <Property Type="String" Name="CustomerSalesTax" />
+          <Property Type="String" Name="CustomerSalesTaxId" />
+          <Property Type="String" Name="Class" />
+          <Property Type="String" Name="ClassId" />
+          <Property Type="Decimal" Name="ExchangeRate" />
+          <Property Type="String" Name="CustomFields" />
+          <Property Type="String" Name="ItemLineId" />
+          <Property Type="String" Name="ItemId" />
+          <Property Type="String" Name="ItemName" />
+          <Property Type="String" Name="ItemGroup" />
+          <Property Type="String" Name="ItemGroupId" />
+          <Property Type="String" Name="ItemDescription" />
+          <Property Type="Decimal" Name="ItemQuantity" />
+          <Property Type="Decimal" Name="ItemRate" />
+          <Property Type="String" Name="ItemTaxCode" />
+          <Property Type="String" Name="ItemTaxCodeId" />
+          <Property Type="Decimal" Name="ItemAmount" />
+          <Property Type="String" Name="ItemClass" />
+          <Property Type="String" Name="ItemClassId" />
+          <Property Type="String" Name="ItemOther1" />
+          <Property Type="String" Name="ItemOther2" />
+          <Property Type="String" Name="ItemCustomFields" />
+          <Property Type="String" Name="EditSequence" />
+          <Property Type="DateTime" Name="TimeModified" />
+          <Property Type="DateTime" Name="TimeCreated" />
+        </EntityType>
+        <EntityType Name="CreditMemo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ReferenceNumber" />
+          <Property Type="String" Name="TxnNumber" />
+          <Property Type="DateTime" Name="Date" />
+          <Property Type="String" Name="CustomerName" />
+          <Property Type="String" Name="CustomerId" />
+          <Property Type="String" Name="AccountsReceivableID" />
+          <Property Type="String" Name="AccountsReceivable" />
+          <Property Type="String" Name="ShipMethod" />
+          <Property Type="String" Name="ShipMethodId" />
+          <Property Type="DateTime" Name="ShipDate" />
+          <Property Type="String" Name="Memo" />
+          <Property Type="Decimal" Name="Amount" />
+          <Property Type="String" Name="Message" />
+          <Property Type="String" Name="MessageId" />
+          <Property Type="String" Name="SalesRep" />
+          <Property Type="String" Name="SalesRepId" />
+          <Property Type="String" Name="FOB" />
+          <Property Type="String" Name="BillingAddress" />
+          <Property Type="String" Name="BillingLine1" />
+          <Property Type="String" Name="BillingLine2" />
+          <Property Type="String" Name="BillingLine3" />
+          <Property Type="String" Name="BillingLine4" />
+          <Property Type="String" Name="BillingLine5" />
+          <Property Type="String" Name="BillingCity" />
+          <Property Type="String" Name="BillingState" />
+          <Property Type="String" Name="BillingPostalCode" />
+          <Property Type="String" Name="BillingCountry" />
+          <Property Type="String" Name="ShippingAddress" />
+          <Property Type="String" Name="ShippingLine1" />
+          <Property Type="String" Name="ShippingLine2" />
+          <Property Type="String" Name="ShippingLine3" />
+          <Property Type="String" Name="ShippingLine4" />
+          <Property Type="String" Name="ShippingLine5" />
+          <Property Type="String" Name="ShippingCity" />
+          <Property Type="String" Name="ShippingState" />
+          <Property Type="String" Name="ShippingPostalCode" />
+          <Property Type="String" Name="ShippingCountry" />
+          <Property Type="Decimal" Name="Subtotal" />
+          <Property Type="Decimal" Name="Tax" />
+          <Property Type="String" Name="TaxAgency" />
+          <Property Type="String" Name="TaxAgencyId" />
+          <Property Type="Decimal" Name="TaxPercent" />
+          <Property Type="Int32" Name="IsPending" />
+          <Property Type="Int32" Name="IsToBePrinted" />
+          <Property Type="String" Name="PONumber" />
+          <Property Type="String" Name="Terms" />
+          <Property Type="String" Name="TermsId" />
+          <Property Type="Decimal" Name="CreditRemaining" />
+          <Property Type="DateTime" Name="DueDate" />
+          <Property Type="String" Name="Template" />
+          <Property Type="String" Name="TemplateId" />
+          <Property Type="String" Name="CustomerSalesTax" />
+          <Property Type="String" Name="CustomerSalesTaxId" />
+          <Property Type="String" Name="Class" />
+          <Property Type="String" Name="ClassId" />
+          <Property Type="Decimal" Name="ExchangeRate" />
+          <Property Type="Int32" Name="ItemCount" />
+          <Property Type="String" Name="ItemAggregate" />
+          <Property Type="Int32" Name="TransactionCount" />
+          <Property Type="String" Name="TransactionAggregate" />
+          <Property Type="String" Name="CustomFields" />
+          <Property Type="String" Name="EditSequence" />
+          <Property Type="DateTime" Name="TimeModified" />
+          <Property Type="DateTime" Name="TimeCreated" />
+        </EntityType>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" />
+          <Property Type="String" Name="Salutation" />
+          <Property Type="String" Name="FirstName" />
+          <Property Type="String" Name="MiddleInitial" />
+          <Property Type="String" Name="LastName" />
+          <Property Type="String" Name="FullName" />
+          <Property Type="String" Name="AccountNumber" />
+          <Property Type="String" Name="Company" />
+          <Property Type="Decimal" Name="Balance" />
+          <Property Type="Decimal" Name="CustomerBalance" />
+          <Property Type="String" Name="Contact" />
+          <Property Type="String" Name="Type" />
+          <Property Type="String" Name="TypeId" />
+          <Property Type="String" Name="Phone" />
+          <Property Type="String" Name="Fax" />
+          <Property Type="String" Name="AlternateContact" />
+          <Property Type="String" Name="AlternatePhone" />
+          <Property Type="String" Name="Email" />
+          <Property Type="String" Name="Notes" />
+          <Property Type="String" Name="ParentName" />
+          <Property Type="String" Name="ParentId" />
+          <Property Type="String" Name="Sublevel" />
+          <Property Type="String" Name="JobStatus" />
+          <Property Type="DateTime" Name="JobStartDate" />
+          <Property Type="DateTime" Name="JobProjectedEndDate" />
+          <Property Type="DateTime" Name="JobEndDate" />
+          <Property Type="String" Name="JobDescription" />
+          <Property Type="String" Name="JobTypeId" />
+          <Property Type="String" Name="JobType" />
+          <Property Type="String" Name="CreditCardAddress" />
+          <Property Type="String" Name="CreditCardExpMonth" />
+          <Property Type="String" Name="CreditCardExpYear" />
+          <Property Type="String" Name="CreditCardNameOnCard" />
+          <Property Type="String" Name="CreditCardNumber" />
+          <Property Type="String" Name="CreditCardPostalCode" />
+          <Property Type="Decimal" Name="CreditLimit" />
+          <Property Type="String" Name="BillingAddress" />
+          <Property Type="String" Name="BillingLine1" />
+          <Property Type="String" Name="BillingLine2" />
+          <Property Type="String" Name="BillingLine3" />
+          <Property Type="String" Name="BillingLine4" />
+          <Property Type="String" Name="BillingLine5" />
+          <Property Type="String" Name="BillingCity" />
+          <Property Type="String" Name="BillingState" />
+          <Property Type="String" Name="BillingPostalCode" />
+          <Property Type="String" Name="BillingCountry" />
+          <Property Type="String" Name="ShippingAddress" />
+          <Property Type="String" Name="ShippingLine1" />
+          <Property Type="String" Name="ShippingLine2" />
+          <Property Type="String" Name="ShippingLine3" />
+          <Property Type="String" Name="ShippingLine4" />
+          <Property Type="String" Name="ShippingLine5" />
+          <Property Type="String" Name="ShippingCity" />
+          <Property Type="String" Name="ShippingState" />
+          <Property Type="String" Name="ShippingPostalCode" />
+          <Property Type="String" Name="ShippingCountry" />
+          <Property Type="String" Name="ResaleNumber" />
+          <Property Type="String" Name="SalesRep" />
+          <Property Type="String" Name="SalesRepId" />
+          <Property Type="String" Name="Terms" />
+          <Property Type="String" Name="TermsId" />
+          <Property Type="String" Name="CurrencyName" />
+          <Property Type="String" Name="CurrencyId" />
+          <Property Type="String" Name="TaxCode" />
+          <Property Type="String" Name="TaxCodeId" />
+          <Property Type="String" Name="TaxItem" />
+          <Property Type="String" Name="TaxItemId" />
+          <Property Type="String" Name="PriceLevel" />
+          <Property Type="String" Name="PriceLevelId" />
+          <Property Type="String" Name="PreferredPaymentMethodName" />
+          <Property Type="String" Name="PreferredPaymentMethodId" />
+          <Property Type="String" Name="PrintAs" />
+          <Property Type="Int32" Name="IsActive" />
+          <Property Type="String" Name="CustomFields" />
+          <Property Type="String" Name="EditSequence" />
+          <Property Type="DateTime" Name="TimeModified" />
+          <Property Type="DateTime" Name="TimeCreated" />
+        </EntityType>
+        <EntityType Name="InvoiceLineItem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="InvoiceId" />
+          <Property Type="String" Name="ReferenceNumber" />
+          <Property Type="String" Name="TxnNumber" />
+          <Property Type="String" Name="CustomerName" />
+          <Property Type="String" Name="CustomerId" />
+          <Property Type="String" Name="Account" />
+          <Property Type="String" Name="AccountId" />
+          <Property Type="DateTime" Name="Date" />
+          <Property Type="String" Name="ShipMethod" />
+          <Property Type="String" Name="ShipMethodId" />
+          <Property Type="DateTime" Name="ShipDate" />
+          <Property Type="String" Name="Memo" />
+          <Property Type="String" Name="Class" />
+          <Property Type="String" Name="ClassId" />
+          <Property Type="Decimal" Name="Amount" />
+          <Property Type="String" Name="Message" />
+          <Property Type="String" Name="MessageId" />
+          <Property Type="String" Name="SalesRep" />
+          <Property Type="String" Name="SalesRepId" />
+          <Property Type="String" Name="FOB" />
+          <Property Type="String" Name="BillingAddress" />
+          <Property Type="String" Name="BillingLine1" />
+          <Property Type="String" Name="BillingLine2" />
+          <Property Type="String" Name="BillingLine3" />
+          <Property Type="String" Name="BillingLine4" />
+          <Property Type="String" Name="BillingLine5" />
+          <Property Type="String" Name="BillingCity" />
+          <Property Type="String" Name="BillingState" />
+          <Property Type="String" Name="BillingPostalCode" />
+          <Property Type="String" Name="BillingCountry" />
+          <Property Type="String" Name="ShippingAddress" />
+          <Property Type="String" Name="ShippingLine1" />
+          <Property Type="String" Name="ShippingLine2" />
+          <Property Type="String" Name="ShippingLine3" />
+          <Property Type="String" Name="ShippingLine4" />
+          <Property Type="String" Name="ShippingLine5" />
+          <Property Type="String" Name="ShippingCity" />
+          <Property Type="String" Name="ShippingState" />
+          <Property Type="String" Name="ShippingPostalCode" />
+          <Property Type="String" Name="ShippingCountry" />
+          <Property Type="Decimal" Name="Subtotal" />
+          <Property Type="Decimal" Name="Tax" />
+          <Property Type="String" Name="TaxAgency" />
+          <Property Type="String" Name="TaxAgencyId" />
+          <Property Type="Decimal" Name="TaxPercent" />
+          <Property Type="String" Name="POnumber" />
+          <Property Type="DateTime" Name="DueDate" />
+          <Property Type="String" Name="Terms" />
+          <Property Type="String" Name="TermsId" />
+          <Property Type="String" Name="CustomFields" />
+          <Property Type="String" Name="ItemLineId" />
+          <Property Type="String" Name="ItemId" />
+          <Property Type="String" Name="ItemName" />
+          <Property Type="String" Name="ItemGroup" />
+          <Property Type="String" Name="ItemGroupId" />
+          <Property Type="String" Name="ItemDescription" />
+          <Property Type="Decimal" Name="ItemQuantity" />
+          <Property Type="Decimal" Name="ItemRate" />
+          <Property Type="String" Name="ItemTaxCode" />
+          <Property Type="String" Name="ItemTaxCodeId" />
+          <Property Type="Decimal" Name="ItemAmount" />
+          <Property Type="String" Name="ItemClass" />
+          <Property Type="String" Name="ItemClassId" />
+          <Property Type="String" Name="ItemOther1" />
+          <Property Type="String" Name="ItemOther2" />
+          <Property Type="String" Name="ItemCustomFields" />
+          <Property Type="Decimal" Name="AppliedAmount" />
+          <Property Type="Decimal" Name="Balance" />
+          <Property Type="String" Name="CustomerTaxCode" />
+          <Property Type="String" Name="CustomerTaxCodeId" />
+          <Property Type="Int32" Name="IsToBePrinted" />
+          <Property Type="Int32" Name="IsToBeEmailed" />
+          <Property Type="Int32" Name="IsPaid" />
+          <Property Type="Int32" Name="IsTaxIncluded" />
+          <Property Type="Int32" Name="IsPending" />
+          <Property Type="String" Name="IsFinanceCharge" />
+          <Property Type="String" Name="Template" />
+          <Property Type="String" Name="TemplateId" />
+          <Property Type="Decimal" Name="SuggestedDiscountAmount" />
+          <Property Type="DateTime" Name="SuggestedDiscountDate" />
+          <Property Type="Decimal" Name="ExchangeRate" />
+          <Property Type="String" Name="BalanceInHomeCurrency" />
+          <Property Type="String" Name="CurrencyName" />
+          <Property Type="String" Name="CurrencyId" />
+          <Property Type="String" Name="Other" />
+          <Property Type="String" Name="EditSequence" />
+          <Property Type="DateTime" Name="TimeModified" />
+          <Property Type="DateTime" Name="TimeCreated" />
+        </EntityType>
+        <EntityType Name="Invoice">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ReferenceNumber" />
+          <Property Type="String" Name="TxnNumber" />
+          <Property Type="String" Name="CustomerName" />
+          <Property Type="String" Name="CustomerId" />
+          <Property Type="String" Name="Account" />
+          <Property Type="String" Name="AccountId" />
+          <Property Type="DateTime" Name="Date" />
+          <Property Type="String" Name="ShipMethod" />
+          <Property Type="String" Name="ShipMethodId" />
+          <Property Type="DateTime" Name="ShipDate" />
+          <Property Type="String" Name="Memo" />
+          <Property Type="String" Name="Class" />
+          <Property Type="String" Name="ClassId" />
+          <Property Type="Decimal" Name="Amount" />
+          <Property Type="String" Name="Message" />
+          <Property Type="String" Name="MessageId" />
+          <Property Type="String" Name="SalesRep" />
+          <Property Type="String" Name="SalesRepId" />
+          <Property Type="String" Name="FOB" />
+          <Property Type="String" Name="BillingAddress" />
+          <Property Type="String" Name="BillingLine1" />
+          <Property Type="String" Name="BillingLine2" />
+          <Property Type="String" Name="BillingLine3" />
+          <Property Type="String" Name="BillingLine4" />
+          <Property Type="String" Name="BillingLine5" />
+          <Property Type="String" Name="BillingCity" />
+          <Property Type="String" Name="BillingState" />
+          <Property Type="String" Name="BillingPostalCode" />
+          <Property Type="String" Name="BillingCountry" />
+          <Property Type="String" Name="ShippingAddress" />
+          <Property Type="String" Name="ShippingLine1" />
+          <Property Type="String" Name="ShippingLine2" />
+          <Property Type="String" Name="ShippingLine3" />
+          <Property Type="String" Name="ShippingLine4" />
+          <Property Type="String" Name="ShippingLine5" />
+          <Property Type="String" Name="ShippingCity" />
+          <Property Type="String" Name="ShippingState" />
+          <Property Type="String" Name="ShippingPostalCode" />
+          <Property Type="String" Name="ShippingCountry" />
+          <Property Type="Decimal" Name="Subtotal" />
+          <Property Type="Decimal" Name="Tax" />
+          <Property Type="String" Name="TaxAgency" />
+          <Property Type="String" Name="TaxAgencyId" />
+          <Property Type="Decimal" Name="TaxPercent" />
+          <Property Type="String" Name="POnumber" />
+          <Property Type="DateTime" Name="DueDate" />
+          <Property Type="String" Name="Terms" />
+          <Property Type="String" Name="TermsId" />
+          <Property Type="Int32" Name="ItemCount" />
+          <Property Type="String" Name="ItemAggregate" />
+          <Property Type="Int32" Name="TransactionCount" />
+          <Property Type="String" Name="TransactionAggregate" />
+          <Property Type="Decimal" Name="AppliedAmount" />
+          <Property Type="Decimal" Name="Balance" />
+          <Property Type="String" Name="CustomerTaxCode" />
+          <Property Type="String" Name="CustomerTaxCodeId" />
+          <Property Type="Int32" Name="IsToBePrinted" />
+          <Property Type="Int32" Name="IsToBeEmailed" />
+          <Property Type="Int32" Name="IsPaid" />
+          <Property Type="Int32" Name="IsTaxIncluded" />
+          <Property Type="Int32" Name="IsPending" />
+          <Property Type="String" Name="IsFinanceCharge" />
+          <Property Type="String" Name="Template" />
+          <Property Type="String" Name="TemplateId" />
+          <Property Type="Decimal" Name="SuggestedDiscountAmount" />
+          <Property Type="DateTime" Name="SuggestedDiscountDate" />
+          <Property Type="Decimal" Name="ExchangeRate" />
+          <Property Type="String" Name="BalanceInHomeCurrency" />
+          <Property Type="String" Name="CurrencyName" />
+          <Property Type="String" Name="CurrencyId" />
+          <Property Type="String" Name="Other" />
+          <Property Type="String" Name="CustomFields" />
+          <Property Type="String" Name="EditSequence" />
+          <Property Type="DateTime" Name="TimeModified" />
+          <Property Type="DateTime" Name="TimeCreated" />
+        </EntityType>
+        <EntityType Name="ItemLineItem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ItemId" />
+          <Property Type="String" Name="Name" />
+          <Property Type="String" Name="Type" />
+          <Property Type="String" Name="Account" />
+          <Property Type="String" Name="AccountId" />
+          <Property Type="String" Name="COGSAccount" />
+          <Property Type="String" Name="COGSAccountId" />
+          <Property Type="String" Name="AssetAccount" />
+          <Property Type="String" Name="AssetAccountId" />
+          <Property Type="String" Name="LineItemId" />
+          <Property Type="String" Name="LineItemName" />
+          <Property Type="Decimal" Name="LineItemQuantity" />
+          <Property Type="String" Name="ParentName" />
+          <Property Type="String" Name="ParentId" />
+          <Property Type="String" Name="Description" />
+          <Property Type="Decimal" Name="Price" />
+          <Property Type="Decimal" Name="AverageCost" />
+          <Property Type="Int32" Name="IsActive" />
+          <Property Type="Decimal" Name="PurchaseCost" />
+          <Property Type="String" Name="PurchaseDescription" />
+          <Property Type="String" Name="ExpenseAccount" />
+          <Property Type="String" Name="PreferredVendor" />
+          <Property Type="String" Name="PreferredVendorId" />
+          <Property Type="String" Name="TaxCode" />
+          <Property Type="String" Name="TaxCodeId" />
+          <Property Type="String" Name="FullName" />
+          <Property Type="String" Name="CustomFields" />
+          <Property Type="DateTime" Name="TimeModified" />
+          <Property Type="DateTime" Name="TimeCreated" />
+        </EntityType>
+        <EntityType Name="Item">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" />
+          <Property Type="String" Name="FullName" />
+          <Property Type="String" Name="Type" />
+          <Property Type="String" Name="Account" />
+          <Property Type="String" Name="AccountId" />
+          <Property Type="String" Name="COGSAccount" />
+          <Property Type="String" Name="COGSAccountId" />
+          <Property Type="String" Name="AssetAccount" />
+          <Property Type="String" Name="AssetAccountId" />
+          <Property Type="DateTime" Name="DateSold" />
+          <Property Type="String" Name="PurchaseDate" />
+          <Property Type="Int32" Name="ItemCount" />
+          <Property Type="String" Name="ParentName" />
+          <Property Type="String" Name="ParentId" />
+          <Property Type="String" Name="Description" />
+          <Property Type="Decimal" Name="Price" />
+          <Property Type="Decimal" Name="PricePercent" />
+          <Property Type="Decimal" Name="AverageCost" />
+          <Property Type="Int32" Name="IsActive" />
+          <Property Type="Decimal" Name="PurchaseCost" />
+          <Property Type="String" Name="PurchaseDescription" />
+          <Property Type="String" Name="ExpenseAccount" />
+          <Property Type="String" Name="ExpenseAccountId" />
+          <Property Type="String" Name="PreferredVendor" />
+          <Property Type="String" Name="PreferredVendorId" />
+          <Property Type="Decimal" Name="QuantityOnHand" />
+          <Property Type="Decimal" Name="QuantityOnOrder" />
+          <Property Type="Decimal" Name="QuantityOnSalesOrder" />
+          <Property Type="DateTime" Name="InventoryDate" />
+          <Property Type="String" Name="ReorderPoint" />
+          <Property Type="String" Name="TaxCode" />
+          <Property Type="String" Name="TaxCodeId" />
+          <Property Type="String" Name="PartNumber" />
+          <Property Type="String" Name="PaymentMethodName" />
+          <Property Type="String" Name="PaymentMethodId" />
+          <Property Type="Decimal" Name="TaxRate" />
+          <Property Type="String" Name="TaxVendorName" />
+          <Property Type="String" Name="TaxVendorId" />
+          <Property Type="String" Name="SpecialItemType" />
+          <Property Type="String" Name="VendorOrPayeeName" />
+          <Property Type="String" Name="SalesExpense" />
+          <Property Type="String" Name="AssetAcquiredAs" />
+          <Property Type="String" Name="AssetDescription" />
+          <Property Type="String" Name="AssetLocation" />
+          <Property Type="String" Name="AssetPONumber" />
+          <Property Type="String" Name="AssetSerialNumber" />
+          <Property Type="String" Name="AssetWarrantyExpires" />
+          <Property Type="String" Name="AssetNotes" />
+          <Property Type="String" Name="AssetNumber" />
+          <Property Type="Decimal" Name="AssetCostBasis" />
+          <Property Type="Decimal" Name="AssetDepreciation" />
+          <Property Type="Decimal" Name="AssetBookValue" />
+          <Property Type="String" Name="UnitOfMeasure" />
+          <Property Type="String" Name="UnitOfMeasureId" />
+          <Property Type="Int32" Name="Sublevel" />
+          <Property Type="String" Name="CustomFields" />
+          <Property Type="String" Name="EditSequence" />
+          <Property Type="DateTime" Name="TimeModified" />
+          <Property Type="DateTime" Name="TimeCreated" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="IdaQuickbookEntities">
+          <EntitySetMapping Name="CreditMemoLineItems">
+            <EntityTypeMapping TypeName="Model.CreditMemoLineItem">
+              <MappingFragment StoreEntitySet="CreditMemoLineItems">
+                <ScalarProperty Name="TimeCreated" ColumnName="TimeCreated" />
+                <ScalarProperty Name="TimeModified" ColumnName="TimeModified" />
+                <ScalarProperty Name="EditSequence" ColumnName="EditSequence" />
+                <ScalarProperty Name="ItemCustomFields" ColumnName="ItemCustomFields" />
+                <ScalarProperty Name="ItemOther2" ColumnName="ItemOther2" />
+                <ScalarProperty Name="ItemOther1" ColumnName="ItemOther1" />
+                <ScalarProperty Name="ItemClassId" ColumnName="ItemClassId" />
+                <ScalarProperty Name="ItemClass" ColumnName="ItemClass" />
+                <ScalarProperty Name="ItemAmount" ColumnName="ItemAmount" />
+                <ScalarProperty Name="ItemTaxCodeId" ColumnName="ItemTaxCodeId" />
+                <ScalarProperty Name="ItemTaxCode" ColumnName="ItemTaxCode" />
+                <ScalarProperty Name="ItemRate" ColumnName="ItemRate" />
+                <ScalarProperty Name="ItemQuantity" ColumnName="ItemQuantity" />
+                <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+                <ScalarProperty Name="ItemGroupId" ColumnName="ItemGroupId" />
+                <ScalarProperty Name="ItemGroup" ColumnName="ItemGroup" />
+                <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+                <ScalarProperty Name="ItemLineId" ColumnName="ItemLineId" />
+                <ScalarProperty Name="CustomFields" ColumnName="CustomFields" />
+                <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+                <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="CustomerSalesTaxId" ColumnName="CustomerSalesTaxId" />
+                <ScalarProperty Name="CustomerSalesTax" ColumnName="CustomerSalesTax" />
+                <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+                <ScalarProperty Name="Template" ColumnName="Template" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="CreditRemaining" ColumnName="CreditRemaining" />
+                <ScalarProperty Name="TermsId" ColumnName="TermsId" />
+                <ScalarProperty Name="Terms" ColumnName="Terms" />
+                <ScalarProperty Name="PONumber" ColumnName="PONumber" />
+                <ScalarProperty Name="IsPending" ColumnName="IsPending" />
+                <ScalarProperty Name="TaxPercent" ColumnName="TaxPercent" />
+                <ScalarProperty Name="TaxAgencyId" ColumnName="TaxAgencyId" />
+                <ScalarProperty Name="TaxAgency" ColumnName="TaxAgency" />
+                <ScalarProperty Name="Tax" ColumnName="Tax" />
+                <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+                <ScalarProperty Name="ShippingCountry" ColumnName="ShippingCountry" />
+                <ScalarProperty Name="ShippingPostalCode" ColumnName="ShippingPostalCode" />
+                <ScalarProperty Name="ShippingState" ColumnName="ShippingState" />
+                <ScalarProperty Name="ShippingCity" ColumnName="ShippingCity" />
+                <ScalarProperty Name="ShippingLine5" ColumnName="ShippingLine5" />
+                <ScalarProperty Name="ShippingLine4" ColumnName="ShippingLine4" />
+                <ScalarProperty Name="ShippingLine3" ColumnName="ShippingLine3" />
+                <ScalarProperty Name="ShippingLine2" ColumnName="ShippingLine2" />
+                <ScalarProperty Name="ShippingLine1" ColumnName="ShippingLine1" />
+                <ScalarProperty Name="ShippingAddress" ColumnName="ShippingAddress" />
+                <ScalarProperty Name="BillingCountry" ColumnName="BillingCountry" />
+                <ScalarProperty Name="BillingPostalCode" ColumnName="BillingPostalCode" />
+                <ScalarProperty Name="BillingState" ColumnName="BillingState" />
+                <ScalarProperty Name="BillingCity" ColumnName="BillingCity" />
+                <ScalarProperty Name="BillingLine5" ColumnName="BillingLine5" />
+                <ScalarProperty Name="BillingLine4" ColumnName="BillingLine4" />
+                <ScalarProperty Name="BillingLine3" ColumnName="BillingLine3" />
+                <ScalarProperty Name="BillingLine2" ColumnName="BillingLine2" />
+                <ScalarProperty Name="BillingLine1" ColumnName="BillingLine1" />
+                <ScalarProperty Name="BillingAddress" ColumnName="BillingAddress" />
+                <ScalarProperty Name="FOB" ColumnName="FOB" />
+                <ScalarProperty Name="SalesRepId" ColumnName="SalesRepId" />
+                <ScalarProperty Name="SalesRep" ColumnName="SalesRep" />
+                <ScalarProperty Name="MessageId" ColumnName="MessageId" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Memo" ColumnName="Memo" />
+                <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
+                <ScalarProperty Name="ShipMethodId" ColumnName="ShipMethodId" />
+                <ScalarProperty Name="ShipMethod" ColumnName="ShipMethod" />
+                <ScalarProperty Name="AccountsReceivable" ColumnName="AccountsReceivable" />
+                <ScalarProperty Name="AccountsReceivableID" ColumnName="AccountsReceivableID" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="TxnNumber" ColumnName="TxnNumber" />
+                <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+                <ScalarProperty Name="CreditMemoId" ColumnName="CreditMemoId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CreditMemos">
+            <EntityTypeMapping TypeName="Model.CreditMemo">
+              <MappingFragment StoreEntitySet="CreditMemos">
+                <ScalarProperty Name="TimeCreated" ColumnName="TimeCreated" />
+                <ScalarProperty Name="TimeModified" ColumnName="TimeModified" />
+                <ScalarProperty Name="EditSequence" ColumnName="EditSequence" />
+                <ScalarProperty Name="CustomFields" ColumnName="CustomFields" />
+                <ScalarProperty Name="TransactionAggregate" ColumnName="TransactionAggregate" />
+                <ScalarProperty Name="TransactionCount" ColumnName="TransactionCount" />
+                <ScalarProperty Name="ItemAggregate" ColumnName="ItemAggregate" />
+                <ScalarProperty Name="ItemCount" ColumnName="ItemCount" />
+                <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+                <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="CustomerSalesTaxId" ColumnName="CustomerSalesTaxId" />
+                <ScalarProperty Name="CustomerSalesTax" ColumnName="CustomerSalesTax" />
+                <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+                <ScalarProperty Name="Template" ColumnName="Template" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="CreditRemaining" ColumnName="CreditRemaining" />
+                <ScalarProperty Name="TermsId" ColumnName="TermsId" />
+                <ScalarProperty Name="Terms" ColumnName="Terms" />
+                <ScalarProperty Name="PONumber" ColumnName="PONumber" />
+                <ScalarProperty Name="IsToBePrinted" ColumnName="IsToBePrinted" />
+                <ScalarProperty Name="IsPending" ColumnName="IsPending" />
+                <ScalarProperty Name="TaxPercent" ColumnName="TaxPercent" />
+                <ScalarProperty Name="TaxAgencyId" ColumnName="TaxAgencyId" />
+                <ScalarProperty Name="TaxAgency" ColumnName="TaxAgency" />
+                <ScalarProperty Name="Tax" ColumnName="Tax" />
+                <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+                <ScalarProperty Name="ShippingCountry" ColumnName="ShippingCountry" />
+                <ScalarProperty Name="ShippingPostalCode" ColumnName="ShippingPostalCode" />
+                <ScalarProperty Name="ShippingState" ColumnName="ShippingState" />
+                <ScalarProperty Name="ShippingCity" ColumnName="ShippingCity" />
+                <ScalarProperty Name="ShippingLine5" ColumnName="ShippingLine5" />
+                <ScalarProperty Name="ShippingLine4" ColumnName="ShippingLine4" />
+                <ScalarProperty Name="ShippingLine3" ColumnName="ShippingLine3" />
+                <ScalarProperty Name="ShippingLine2" ColumnName="ShippingLine2" />
+                <ScalarProperty Name="ShippingLine1" ColumnName="ShippingLine1" />
+                <ScalarProperty Name="ShippingAddress" ColumnName="ShippingAddress" />
+                <ScalarProperty Name="BillingCountry" ColumnName="BillingCountry" />
+                <ScalarProperty Name="BillingPostalCode" ColumnName="BillingPostalCode" />
+                <ScalarProperty Name="BillingState" ColumnName="BillingState" />
+                <ScalarProperty Name="BillingCity" ColumnName="BillingCity" />
+                <ScalarProperty Name="BillingLine5" ColumnName="BillingLine5" />
+                <ScalarProperty Name="BillingLine4" ColumnName="BillingLine4" />
+                <ScalarProperty Name="BillingLine3" ColumnName="BillingLine3" />
+                <ScalarProperty Name="BillingLine2" ColumnName="BillingLine2" />
+                <ScalarProperty Name="BillingLine1" ColumnName="BillingLine1" />
+                <ScalarProperty Name="BillingAddress" ColumnName="BillingAddress" />
+                <ScalarProperty Name="FOB" ColumnName="FOB" />
+                <ScalarProperty Name="SalesRepId" ColumnName="SalesRepId" />
+                <ScalarProperty Name="SalesRep" ColumnName="SalesRep" />
+                <ScalarProperty Name="MessageId" ColumnName="MessageId" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Memo" ColumnName="Memo" />
+                <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
+                <ScalarProperty Name="ShipMethodId" ColumnName="ShipMethodId" />
+                <ScalarProperty Name="ShipMethod" ColumnName="ShipMethod" />
+                <ScalarProperty Name="AccountsReceivable" ColumnName="AccountsReceivable" />
+                <ScalarProperty Name="AccountsReceivableID" ColumnName="AccountsReceivableID" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="TxnNumber" ColumnName="TxnNumber" />
+                <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Customers">
+            <EntityTypeMapping TypeName="Model.Customer">
+              <MappingFragment StoreEntitySet="Customers">
+                <ScalarProperty Name="TimeCreated" ColumnName="TimeCreated" />
+                <ScalarProperty Name="TimeModified" ColumnName="TimeModified" />
+                <ScalarProperty Name="EditSequence" ColumnName="EditSequence" />
+                <ScalarProperty Name="CustomFields" ColumnName="CustomFields" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="PrintAs" ColumnName="PrintAs" />
+                <ScalarProperty Name="PreferredPaymentMethodId" ColumnName="PreferredPaymentMethodId" />
+                <ScalarProperty Name="PreferredPaymentMethodName" ColumnName="PreferredPaymentMethodName" />
+                <ScalarProperty Name="PriceLevelId" ColumnName="PriceLevelId" />
+                <ScalarProperty Name="PriceLevel" ColumnName="PriceLevel" />
+                <ScalarProperty Name="TaxItemId" ColumnName="TaxItemId" />
+                <ScalarProperty Name="TaxItem" ColumnName="TaxItem" />
+                <ScalarProperty Name="TaxCodeId" ColumnName="TaxCodeId" />
+                <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+                <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+                <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+                <ScalarProperty Name="TermsId" ColumnName="TermsId" />
+                <ScalarProperty Name="Terms" ColumnName="Terms" />
+                <ScalarProperty Name="SalesRepId" ColumnName="SalesRepId" />
+                <ScalarProperty Name="SalesRep" ColumnName="SalesRep" />
+                <ScalarProperty Name="ResaleNumber" ColumnName="ResaleNumber" />
+                <ScalarProperty Name="ShippingCountry" ColumnName="ShippingCountry" />
+                <ScalarProperty Name="ShippingPostalCode" ColumnName="ShippingPostalCode" />
+                <ScalarProperty Name="ShippingState" ColumnName="ShippingState" />
+                <ScalarProperty Name="ShippingCity" ColumnName="ShippingCity" />
+                <ScalarProperty Name="ShippingLine5" ColumnName="ShippingLine5" />
+                <ScalarProperty Name="ShippingLine4" ColumnName="ShippingLine4" />
+                <ScalarProperty Name="ShippingLine3" ColumnName="ShippingLine3" />
+                <ScalarProperty Name="ShippingLine2" ColumnName="ShippingLine2" />
+                <ScalarProperty Name="ShippingLine1" ColumnName="ShippingLine1" />
+                <ScalarProperty Name="ShippingAddress" ColumnName="ShippingAddress" />
+                <ScalarProperty Name="BillingCountry" ColumnName="BillingCountry" />
+                <ScalarProperty Name="BillingPostalCode" ColumnName="BillingPostalCode" />
+                <ScalarProperty Name="BillingState" ColumnName="BillingState" />
+                <ScalarProperty Name="BillingCity" ColumnName="BillingCity" />
+                <ScalarProperty Name="BillingLine5" ColumnName="BillingLine5" />
+                <ScalarProperty Name="BillingLine4" ColumnName="BillingLine4" />
+                <ScalarProperty Name="BillingLine3" ColumnName="BillingLine3" />
+                <ScalarProperty Name="BillingLine2" ColumnName="BillingLine2" />
+                <ScalarProperty Name="BillingLine1" ColumnName="BillingLine1" />
+                <ScalarProperty Name="BillingAddress" ColumnName="BillingAddress" />
+                <ScalarProperty Name="CreditLimit" ColumnName="CreditLimit" />
+                <ScalarProperty Name="CreditCardPostalCode" ColumnName="CreditCardPostalCode" />
+                <ScalarProperty Name="CreditCardNumber" ColumnName="CreditCardNumber" />
+                <ScalarProperty Name="CreditCardNameOnCard" ColumnName="CreditCardNameOnCard" />
+                <ScalarProperty Name="CreditCardExpYear" ColumnName="CreditCardExpYear" />
+                <ScalarProperty Name="CreditCardExpMonth" ColumnName="CreditCardExpMonth" />
+                <ScalarProperty Name="CreditCardAddress" ColumnName="CreditCardAddress" />
+                <ScalarProperty Name="JobType" ColumnName="JobType" />
+                <ScalarProperty Name="JobTypeId" ColumnName="JobTypeId" />
+                <ScalarProperty Name="JobDescription" ColumnName="JobDescription" />
+                <ScalarProperty Name="JobEndDate" ColumnName="JobEndDate" />
+                <ScalarProperty Name="JobProjectedEndDate" ColumnName="JobProjectedEndDate" />
+                <ScalarProperty Name="JobStartDate" ColumnName="JobStartDate" />
+                <ScalarProperty Name="JobStatus" ColumnName="JobStatus" />
+                <ScalarProperty Name="Sublevel" ColumnName="Sublevel" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="ParentName" ColumnName="ParentName" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="AlternatePhone" ColumnName="AlternatePhone" />
+                <ScalarProperty Name="AlternateContact" ColumnName="AlternateContact" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="CustomerBalance" ColumnName="CustomerBalance" />
+                <ScalarProperty Name="Balance" ColumnName="Balance" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="MiddleInitial" ColumnName="MiddleInitial" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="InvoiceLineItems">
+            <EntityTypeMapping TypeName="Model.InvoiceLineItem">
+              <MappingFragment StoreEntitySet="InvoiceLineItems">
+                <ScalarProperty Name="TimeCreated" ColumnName="TimeCreated" />
+                <ScalarProperty Name="TimeModified" ColumnName="TimeModified" />
+                <ScalarProperty Name="EditSequence" ColumnName="EditSequence" />
+                <ScalarProperty Name="Other" ColumnName="Other" />
+                <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+                <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+                <ScalarProperty Name="BalanceInHomeCurrency" ColumnName="BalanceInHomeCurrency" />
+                <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+                <ScalarProperty Name="SuggestedDiscountDate" ColumnName="SuggestedDiscountDate" />
+                <ScalarProperty Name="SuggestedDiscountAmount" ColumnName="SuggestedDiscountAmount" />
+                <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+                <ScalarProperty Name="Template" ColumnName="Template" />
+                <ScalarProperty Name="IsFinanceCharge" ColumnName="IsFinanceCharge" />
+                <ScalarProperty Name="IsPending" ColumnName="IsPending" />
+                <ScalarProperty Name="IsTaxIncluded" ColumnName="IsTaxIncluded" />
+                <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
+                <ScalarProperty Name="IsToBeEmailed" ColumnName="IsToBeEmailed" />
+                <ScalarProperty Name="IsToBePrinted" ColumnName="IsToBePrinted" />
+                <ScalarProperty Name="CustomerTaxCodeId" ColumnName="CustomerTaxCodeId" />
+                <ScalarProperty Name="CustomerTaxCode" ColumnName="CustomerTaxCode" />
+                <ScalarProperty Name="Balance" ColumnName="Balance" />
+                <ScalarProperty Name="AppliedAmount" ColumnName="AppliedAmount" />
+                <ScalarProperty Name="ItemCustomFields" ColumnName="ItemCustomFields" />
+                <ScalarProperty Name="ItemOther2" ColumnName="ItemOther2" />
+                <ScalarProperty Name="ItemOther1" ColumnName="ItemOther1" />
+                <ScalarProperty Name="ItemClassId" ColumnName="ItemClassId" />
+                <ScalarProperty Name="ItemClass" ColumnName="ItemClass" />
+                <ScalarProperty Name="ItemAmount" ColumnName="ItemAmount" />
+                <ScalarProperty Name="ItemTaxCodeId" ColumnName="ItemTaxCodeId" />
+                <ScalarProperty Name="ItemTaxCode" ColumnName="ItemTaxCode" />
+                <ScalarProperty Name="ItemRate" ColumnName="ItemRate" />
+                <ScalarProperty Name="ItemQuantity" ColumnName="ItemQuantity" />
+                <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+                <ScalarProperty Name="ItemGroupId" ColumnName="ItemGroupId" />
+                <ScalarProperty Name="ItemGroup" ColumnName="ItemGroup" />
+                <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+                <ScalarProperty Name="ItemLineId" ColumnName="ItemLineId" />
+                <ScalarProperty Name="CustomFields" ColumnName="CustomFields" />
+                <ScalarProperty Name="TermsId" ColumnName="TermsId" />
+                <ScalarProperty Name="Terms" ColumnName="Terms" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="POnumber" ColumnName="POnumber" />
+                <ScalarProperty Name="TaxPercent" ColumnName="TaxPercent" />
+                <ScalarProperty Name="TaxAgencyId" ColumnName="TaxAgencyId" />
+                <ScalarProperty Name="TaxAgency" ColumnName="TaxAgency" />
+                <ScalarProperty Name="Tax" ColumnName="Tax" />
+                <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+                <ScalarProperty Name="ShippingCountry" ColumnName="ShippingCountry" />
+                <ScalarProperty Name="ShippingPostalCode" ColumnName="ShippingPostalCode" />
+                <ScalarProperty Name="ShippingState" ColumnName="ShippingState" />
+                <ScalarProperty Name="ShippingCity" ColumnName="ShippingCity" />
+                <ScalarProperty Name="ShippingLine5" ColumnName="ShippingLine5" />
+                <ScalarProperty Name="ShippingLine4" ColumnName="ShippingLine4" />
+                <ScalarProperty Name="ShippingLine3" ColumnName="ShippingLine3" />
+                <ScalarProperty Name="ShippingLine2" ColumnName="ShippingLine2" />
+                <ScalarProperty Name="ShippingLine1" ColumnName="ShippingLine1" />
+                <ScalarProperty Name="ShippingAddress" ColumnName="ShippingAddress" />
+                <ScalarProperty Name="BillingCountry" ColumnName="BillingCountry" />
+                <ScalarProperty Name="BillingPostalCode" ColumnName="BillingPostalCode" />
+                <ScalarProperty Name="BillingState" ColumnName="BillingState" />
+                <ScalarProperty Name="BillingCity" ColumnName="BillingCity" />
+                <ScalarProperty Name="BillingLine5" ColumnName="BillingLine5" />
+                <ScalarProperty Name="BillingLine4" ColumnName="BillingLine4" />
+                <ScalarProperty Name="BillingLine3" ColumnName="BillingLine3" />
+                <ScalarProperty Name="BillingLine2" ColumnName="BillingLine2" />
+                <ScalarProperty Name="BillingLine1" ColumnName="BillingLine1" />
+                <ScalarProperty Name="BillingAddress" ColumnName="BillingAddress" />
+                <ScalarProperty Name="FOB" ColumnName="FOB" />
+                <ScalarProperty Name="SalesRepId" ColumnName="SalesRepId" />
+                <ScalarProperty Name="SalesRep" ColumnName="SalesRep" />
+                <ScalarProperty Name="MessageId" ColumnName="MessageId" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="Memo" ColumnName="Memo" />
+                <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
+                <ScalarProperty Name="ShipMethodId" ColumnName="ShipMethodId" />
+                <ScalarProperty Name="ShipMethod" ColumnName="ShipMethod" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+                <ScalarProperty Name="Account" ColumnName="Account" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="TxnNumber" ColumnName="TxnNumber" />
+                <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+                <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Invoices">
+            <EntityTypeMapping TypeName="Model.Invoice">
+              <MappingFragment StoreEntitySet="Invoices">
+                <ScalarProperty Name="TimeCreated" ColumnName="TimeCreated" />
+                <ScalarProperty Name="TimeModified" ColumnName="TimeModified" />
+                <ScalarProperty Name="EditSequence" ColumnName="EditSequence" />
+                <ScalarProperty Name="CustomFields" ColumnName="CustomFields" />
+                <ScalarProperty Name="Other" ColumnName="Other" />
+                <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+                <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+                <ScalarProperty Name="BalanceInHomeCurrency" ColumnName="BalanceInHomeCurrency" />
+                <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+                <ScalarProperty Name="SuggestedDiscountDate" ColumnName="SuggestedDiscountDate" />
+                <ScalarProperty Name="SuggestedDiscountAmount" ColumnName="SuggestedDiscountAmount" />
+                <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+                <ScalarProperty Name="Template" ColumnName="Template" />
+                <ScalarProperty Name="IsFinanceCharge" ColumnName="IsFinanceCharge" />
+                <ScalarProperty Name="IsPending" ColumnName="IsPending" />
+                <ScalarProperty Name="IsTaxIncluded" ColumnName="IsTaxIncluded" />
+                <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
+                <ScalarProperty Name="IsToBeEmailed" ColumnName="IsToBeEmailed" />
+                <ScalarProperty Name="IsToBePrinted" ColumnName="IsToBePrinted" />
+                <ScalarProperty Name="CustomerTaxCodeId" ColumnName="CustomerTaxCodeId" />
+                <ScalarProperty Name="CustomerTaxCode" ColumnName="CustomerTaxCode" />
+                <ScalarProperty Name="Balance" ColumnName="Balance" />
+                <ScalarProperty Name="AppliedAmount" ColumnName="AppliedAmount" />
+                <ScalarProperty Name="TransactionAggregate" ColumnName="TransactionAggregate" />
+                <ScalarProperty Name="TransactionCount" ColumnName="TransactionCount" />
+                <ScalarProperty Name="ItemAggregate" ColumnName="ItemAggregate" />
+                <ScalarProperty Name="ItemCount" ColumnName="ItemCount" />
+                <ScalarProperty Name="TermsId" ColumnName="TermsId" />
+                <ScalarProperty Name="Terms" ColumnName="Terms" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="POnumber" ColumnName="POnumber" />
+                <ScalarProperty Name="TaxPercent" ColumnName="TaxPercent" />
+                <ScalarProperty Name="TaxAgencyId" ColumnName="TaxAgencyId" />
+                <ScalarProperty Name="TaxAgency" ColumnName="TaxAgency" />
+                <ScalarProperty Name="Tax" ColumnName="Tax" />
+                <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+                <ScalarProperty Name="ShippingCountry" ColumnName="ShippingCountry" />
+                <ScalarProperty Name="ShippingPostalCode" ColumnName="ShippingPostalCode" />
+                <ScalarProperty Name="ShippingState" ColumnName="ShippingState" />
+                <ScalarProperty Name="ShippingCity" ColumnName="ShippingCity" />
+                <ScalarProperty Name="ShippingLine5" ColumnName="ShippingLine5" />
+                <ScalarProperty Name="ShippingLine4" ColumnName="ShippingLine4" />
+                <ScalarProperty Name="ShippingLine3" ColumnName="ShippingLine3" />
+                <ScalarProperty Name="ShippingLine2" ColumnName="ShippingLine2" />
+                <ScalarProperty Name="ShippingLine1" ColumnName="ShippingLine1" />
+                <ScalarProperty Name="ShippingAddress" ColumnName="ShippingAddress" />
+                <ScalarProperty Name="BillingCountry" ColumnName="BillingCountry" />
+                <ScalarProperty Name="BillingPostalCode" ColumnName="BillingPostalCode" />
+                <ScalarProperty Name="BillingState" ColumnName="BillingState" />
+                <ScalarProperty Name="BillingCity" ColumnName="BillingCity" />
+                <ScalarProperty Name="BillingLine5" ColumnName="BillingLine5" />
+                <ScalarProperty Name="BillingLine4" ColumnName="BillingLine4" />
+                <ScalarProperty Name="BillingLine3" ColumnName="BillingLine3" />
+                <ScalarProperty Name="BillingLine2" ColumnName="BillingLine2" />
+                <ScalarProperty Name="BillingLine1" ColumnName="BillingLine1" />
+                <ScalarProperty Name="BillingAddress" ColumnName="BillingAddress" />
+                <ScalarProperty Name="FOB" ColumnName="FOB" />
+                <ScalarProperty Name="SalesRepId" ColumnName="SalesRepId" />
+                <ScalarProperty Name="SalesRep" ColumnName="SalesRep" />
+                <ScalarProperty Name="MessageId" ColumnName="MessageId" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="Memo" ColumnName="Memo" />
+                <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
+                <ScalarProperty Name="ShipMethodId" ColumnName="ShipMethodId" />
+                <ScalarProperty Name="ShipMethod" ColumnName="ShipMethod" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+                <ScalarProperty Name="Account" ColumnName="Account" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="TxnNumber" ColumnName="TxnNumber" />
+                <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ItemLineItems">
+            <EntityTypeMapping TypeName="Model.ItemLineItem">
+              <MappingFragment StoreEntitySet="ItemLineItems">
+                <ScalarProperty Name="TimeCreated" ColumnName="TimeCreated" />
+                <ScalarProperty Name="TimeModified" ColumnName="TimeModified" />
+                <ScalarProperty Name="CustomFields" ColumnName="CustomFields" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="TaxCodeId" ColumnName="TaxCodeId" />
+                <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+                <ScalarProperty Name="PreferredVendorId" ColumnName="PreferredVendorId" />
+                <ScalarProperty Name="PreferredVendor" ColumnName="PreferredVendor" />
+                <ScalarProperty Name="ExpenseAccount" ColumnName="ExpenseAccount" />
+                <ScalarProperty Name="PurchaseDescription" ColumnName="PurchaseDescription" />
+                <ScalarProperty Name="PurchaseCost" ColumnName="PurchaseCost" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="AverageCost" ColumnName="AverageCost" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="ParentName" ColumnName="ParentName" />
+                <ScalarProperty Name="LineItemQuantity" ColumnName="LineItemQuantity" />
+                <ScalarProperty Name="LineItemName" ColumnName="LineItemName" />
+                <ScalarProperty Name="LineItemId" ColumnName="LineItemId" />
+                <ScalarProperty Name="AssetAccountId" ColumnName="AssetAccountId" />
+                <ScalarProperty Name="AssetAccount" ColumnName="AssetAccount" />
+                <ScalarProperty Name="COGSAccountId" ColumnName="COGSAccountId" />
+                <ScalarProperty Name="COGSAccount" ColumnName="COGSAccount" />
+                <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+                <ScalarProperty Name="Account" ColumnName="Account" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Items">
+            <EntityTypeMapping TypeName="Model.Item">
+              <MappingFragment StoreEntitySet="Items">
+                <ScalarProperty Name="TimeCreated" ColumnName="TimeCreated" />
+                <ScalarProperty Name="TimeModified" ColumnName="TimeModified" />
+                <ScalarProperty Name="EditSequence" ColumnName="EditSequence" />
+                <ScalarProperty Name="CustomFields" ColumnName="CustomFields" />
+                <ScalarProperty Name="Sublevel" ColumnName="Sublevel" />
+                <ScalarProperty Name="UnitOfMeasureId" ColumnName="UnitOfMeasureId" />
+                <ScalarProperty Name="UnitOfMeasure" ColumnName="UnitOfMeasure" />
+                <ScalarProperty Name="AssetBookValue" ColumnName="AssetBookValue" />
+                <ScalarProperty Name="AssetDepreciation" ColumnName="AssetDepreciation" />
+                <ScalarProperty Name="AssetCostBasis" ColumnName="AssetCostBasis" />
+                <ScalarProperty Name="AssetNumber" ColumnName="AssetNumber" />
+                <ScalarProperty Name="AssetNotes" ColumnName="AssetNotes" />
+                <ScalarProperty Name="AssetWarrantyExpires" ColumnName="AssetWarrantyExpires" />
+                <ScalarProperty Name="AssetSerialNumber" ColumnName="AssetSerialNumber" />
+                <ScalarProperty Name="AssetPONumber" ColumnName="AssetPONumber" />
+                <ScalarProperty Name="AssetLocation" ColumnName="AssetLocation" />
+                <ScalarProperty Name="AssetDescription" ColumnName="AssetDescription" />
+                <ScalarProperty Name="AssetAcquiredAs" ColumnName="AssetAcquiredAs" />
+                <ScalarProperty Name="SalesExpense" ColumnName="SalesExpense" />
+                <ScalarProperty Name="VendorOrPayeeName" ColumnName="VendorOrPayeeName" />
+                <ScalarProperty Name="SpecialItemType" ColumnName="SpecialItemType" />
+                <ScalarProperty Name="TaxVendorId" ColumnName="TaxVendorId" />
+                <ScalarProperty Name="TaxVendorName" ColumnName="TaxVendorName" />
+                <ScalarProperty Name="TaxRate" ColumnName="TaxRate" />
+                <ScalarProperty Name="PaymentMethodId" ColumnName="PaymentMethodId" />
+                <ScalarProperty Name="PaymentMethodName" ColumnName="PaymentMethodName" />
+                <ScalarProperty Name="PartNumber" ColumnName="PartNumber" />
+                <ScalarProperty Name="TaxCodeId" ColumnName="TaxCodeId" />
+                <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+                <ScalarProperty Name="ReorderPoint" ColumnName="ReorderPoint" />
+                <ScalarProperty Name="InventoryDate" ColumnName="InventoryDate" />
+                <ScalarProperty Name="QuantityOnSalesOrder" ColumnName="QuantityOnSalesOrder" />
+                <ScalarProperty Name="QuantityOnOrder" ColumnName="QuantityOnOrder" />
+                <ScalarProperty Name="QuantityOnHand" ColumnName="QuantityOnHand" />
+                <ScalarProperty Name="PreferredVendorId" ColumnName="PreferredVendorId" />
+                <ScalarProperty Name="PreferredVendor" ColumnName="PreferredVendor" />
+                <ScalarProperty Name="ExpenseAccountId" ColumnName="ExpenseAccountId" />
+                <ScalarProperty Name="ExpenseAccount" ColumnName="ExpenseAccount" />
+                <ScalarProperty Name="PurchaseDescription" ColumnName="PurchaseDescription" />
+                <ScalarProperty Name="PurchaseCost" ColumnName="PurchaseCost" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="AverageCost" ColumnName="AverageCost" />
+                <ScalarProperty Name="PricePercent" ColumnName="PricePercent" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="ParentName" ColumnName="ParentName" />
+                <ScalarProperty Name="ItemCount" ColumnName="ItemCount" />
+                <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+                <ScalarProperty Name="DateSold" ColumnName="DateSold" />
+                <ScalarProperty Name="AssetAccountId" ColumnName="AssetAccountId" />
+                <ScalarProperty Name="AssetAccount" ColumnName="AssetAccount" />
+                <ScalarProperty Name="COGSAccountId" ColumnName="COGSAccountId" />
+                <ScalarProperty Name="COGSAccount" ColumnName="COGSAccount" />
+                <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+                <ScalarProperty Name="Account" ColumnName="Account" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="IdaQuickbooks" ZoomLevel="100">
+        <EntityTypeShape EntityType="Model.CreditMemoLineItem" Width="1.5" PointX="0.75" PointY="0.75" Height="13.589661458333332" />
+        <EntityTypeShape EntityType="Model.CreditMemo" Width="1.5" PointX="2.75" PointY="0.75" Height="11.617493489583332" />
+        <EntityTypeShape EntityType="Model.Customer" Width="1.5" PointX="4.75" PointY="0.75" Height="13.754008789062503" />
+        <EntityTypeShape EntityType="Model.InvoiceLineItem" Width="1.5" PointX="6.75" PointY="0.75" Height="15.561829427083332" />
+        <EntityTypeShape EntityType="Model.Invoice" Width="1.5" PointX="8.75" PointY="0.75" Height="13.425314127604167" />
+        <EntityTypeShape EntityType="Model.ItemLineItem" Width="1.5" PointX="10.75" PointY="0.75" Height="5.8653369140625031" />
+        <EntityTypeShape EntityType="Model.Item" Width="1.5" PointX="10.75" PointY="7.75" Height="10.795756835937503" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

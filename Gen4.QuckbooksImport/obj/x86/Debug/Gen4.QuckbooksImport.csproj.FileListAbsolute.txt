@@ -1,0 +1,70 @@
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\bin\Debug\Gen4.QuckbooksImport.exe.config
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\bin\Debug\Gen4.QuckbooksImport.exe
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\bin\Debug\Gen4.QuckbooksImport.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\MainWindow.baml
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\MainWindow.g.cs
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\App.g.cs
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport_MarkupCompile.cache
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.g.resources
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.exe
+c:\users\administrator\documents\visual studio 2010\Projects\Gen4.QuckbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.pdb
+C:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\bin\Debug\Gen4.QuckbooksImport.exe.config
+C:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.exe
+C:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.pdb
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\bin\Debug\Gen4.QuckbooksImport.exe.config
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\bin\Debug\Gen4.QuckbooksImport.exe
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\bin\Debug\Gen4.QuckbooksImport.pdb
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\MainWindow.baml
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\MainWindow.g.cs
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\App.g.cs
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\Gen4.QuckbooksImport_MarkupCompile.cache
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.g.resources
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.Properties.Resources.resources
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\GenerateResource.read.1.tlog
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\GenerateResource.write.1.tlog
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.exe
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.pdb
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\Error.baml
+Z:\Users\VMkrtchyan\Documents\Visual Studio 2010\Projects\Gen4.QuickbooksImport\obj\x86\Debug\Error.g.cs
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\bin\Debug\Gen4.QuckbooksImport.exe.config
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.exe
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.pdb
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\bin\Debug\Gen4.QuckbooksImport.exe
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\bin\Debug\Gen4.QuckbooksImport.pdb
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\obj\x86\Debug\Error.baml
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\obj\x86\Debug\MainWindow.baml
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\obj\x86\Debug\Error.g.cs
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\obj\x86\Debug\MainWindow.g.cs
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\obj\x86\Debug\App.g.cs
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport_MarkupCompile.cache
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.g.resources
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.Properties.Resources.resources
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\obj\x86\Debug\GenerateResource.read.1.tlog
+Z:\Gen4Development\Gen4.QuickbooksImport\trunk\Gen4.QuckbooksImport\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\bin\Debug\ExcludedGen4Customers.xml
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\bin\Debug\Gen4.QuckbooksImport.exe.config
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\bin\Debug\Gen4.QuckbooksImport.exe.manifest
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\bin\Debug\Gen4.QuckbooksImport.application
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\bin\Debug\Gen4.QuckbooksImport.exe
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\bin\Debug\Gen4.QuckbooksImport.pdb
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Error.baml
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\MainWindow.baml
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Error.g.cs
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\MainWindow.g.cs
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\App.g.cs
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport_Content.g.cs
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport_MarkupCompile.cache
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.g.resources
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.Properties.Resources.resources
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.csproj.GenerateResource.Cache
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.exe.manifest
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.application
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.exe
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.pdb
+C:\Gen4Development\Gen4.QuickbooksImport\Gen4.QuckbooksImport\obj\x86\Debug\Gen4.QuckbooksImport.csprojResolveAssemblyReference.cache

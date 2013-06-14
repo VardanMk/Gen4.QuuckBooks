@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <add key="AccountName" value="Accounts Receivable"/>
+  </appSettings>
+  <connectionStrings>
+    <add name="Gen4LiveEntities" connectionString="metadata=res://*/Gen4Live.csdl|res://*/Gen4Live.ssdl|res://*/Gen4Live.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=192.168.1.50;initial catalog=Gen4Live;persist security info=True;user id=sa;password=Password1;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="IdaQuickbookEntities" connectionString="metadata=res://*/IdaQuickbooks.csdl|res://*/IdaQuickbooks.ssdl|res://*/IdaQuickbooks.msl;provider=System.Data.RSSBus.QuickBooks;provider connection string=&quot;Offline=False;Application Name=Gen4PPAImport&quot;" providerName="System.Data.EntityClient" />
+  </connectionStrings>
+</configuration>
